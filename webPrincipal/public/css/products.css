@@ -1,0 +1,172 @@
+/*MOBILE*/
+
+.main-product{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding-bottom: 15px;
+}
+
+select {
+   border: solid 2px #48C9B0;
+   padding: 1vw;
+   font-family: 'Magra', sans-serif;
+   border-radius: 18vw;
+   color: #48C9B0;
+   width: 20vw;
+   text-align: center;
+   background-color: antiquewhite;
+}
+
+.precio-oferta{
+   text-decoration: none;
+   padding: 5px 0 0 10px;
+}
+
+.off{
+   margin: 5px 0 0 30px;
+   border: solid 2px #48C9B0;
+   padding: 5px 10px 5px 10px;
+}
+
+.talle-selector{
+   font-family: 'Magra', sans-serif;
+   font-size: 16px;
+   padding: 19px 20px 10px 20px;
+}
+
+.slider, .talles-envios-cuotas{
+   display: none;
+}
+
+/*tablet*/
+
+@media(min-width: 481px){
+   select {
+      border: solid 2px #48C9B0;
+      padding: 1vw;
+      font-family: 'Magra', sans-serif;
+      border-radius: 18vw;
+      color: #48C9B0;
+      width: 86px;
+      text-align: center;
+      background-color: antiquewhite;
+      font-size: 13px;
+  }
+
+  .producto {
+   width: 45%;
+   justify-content: center;
+   box-sizing: border-box;
+   margin-top: 5vw;
+   margin-right: 2vw;
+   padding: 0%;
+   }
+
+   .talle-selector{
+      padding: 17px 15px 10px 10px;
+   }
+}
+
+/*desktop-1*/
+
+@media(min-width: 769px){
+   .producto {
+      width: 23%;
+      margin-left: 1vw;
+      margin-right: 1vw;
+   }
+   select {
+      border: solid 2px #48C9B0;
+      padding: 0.1px;
+      font-family: 'Magra', sans-serif;
+      border-radius: 18vw;
+      color: #48C9B0;
+      width: 70px;
+      text-align: center;
+      background-color: antiquewhite;
+      font-size: 12px;
+  }
+
+  .description{
+      font-size: 14px;
+  }
+
+  .price-discount {
+      font-family: 'Magra', sans-serif;
+      font-size: 18px;
+      display: flex;
+   }
+
+   .precio-oferta{
+      font-size: 16px;
+   }
+  .talle-selector {
+      padding: 14px 5px 10px 10px;
+   }
+
+   .off {
+      margin: 0px 0 0 13px;
+      border: solid 2px #48C9B0;
+      padding: 5px;
+   }
+}
+
+/*desktop-2*/
+
+@media(min-width: 1100px){
+   .producto {
+      width: 22%;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      margin-top: 1.5vw
+   }
+
+   .description{
+      font-size: 16px;
+   }
+
+   .precio-oferta {
+      font-size: 18px;
+   }
+
+   .off {
+      margin: 0px 0 0 15px;
+      border: solid 2px #48C9B0;
+      padding: 5px;
+      font-size: 20px;
+   }
+
+   .talle-selector {
+      padding: 26px 5px 10px 0px;
+   }
+  
+   .select-talle {
+      font-family: 'Magra', sans-serif;
+      text-align: center;
+      color: #48C9B0;
+      border-radius: 1vw;
+      background-color: antiquewhite;
+      width: 6vw;
+      padding: 4px;
+      font-size: 15px;
+   }
+   
+   select {
+      border: solid 2px #48C9B0;
+      padding: 4px;
+      font-family: 'Magra', sans-serif;
+      border-radius: 1vw;
+      color: #48C9B0;
+      width: 90px;
+      text-align: center;
+      background-color: antiquewhite;
+      font-size: 15px;
+   }
+
+   .cantidad {
+      align-self: center;
+      padding: 6px 12px 3px 0;
+   }
+
+}

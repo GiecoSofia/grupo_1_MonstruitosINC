@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+.slider-info{
+    display: none;
+}
+
+/*main*/
+
+.main {
+    background-color: #fff8f3;
+    padding: 15px;
+    border: 0px 10px;
+}
+
+.ruta {
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+}
+
+.imagen-producto {
+    width: 75vw;
+    height: 50vh;
+    padding: 10px;
+}
+
+.muestra-producto {
+    text-align: center;
+}
+
+.detalle-producto {
+    width: 50vw;
+    display: block;
+    margin: 5px;
+}
+
+h4 {
+    font-family: 'Magra', sans-serif;
+    color: black;
+    font-size: 18px;
+    width: 70vw;
+    text-align: left;
+    font-weight: normal;
+}
+
+.precio {
+    font-family: 'Magra', sans-serif;
+    color: #D35400;
+    font-size: 30px;
+    text-align: left;
+}
+
+
+.precio-descuento {
+    font-family: 'Magra', sans-serif;
+    font-size: 20px;
+    padding: 5px 20px 8px 25px;
+}
+
+.final-price {
+    font-family: 'Magra', sans-serif;
+    font-size: 30px;
+    color: #D35400;
+}
+
+.descuento {
+    font-family: 'Magra', sans-serif;
+    font-size: 20px;
+    padding: 5px 20px 8px 10px;
+    border-right: solid 2px #D35400;
+   
+}
+
+.precios {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.caja-descuento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px #D35400;
+    border-radius: 5px;
+}
+
+.selector-opciones {
+    font-family: 'Magra', sans-serif;
+    color: black;
+    font-size: 20px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.eleccion-talle, .eleccion-color{
+    background-color: #EDBB99;
+    color: black;
+    font-size: 20px;
+    border: none;
+    width: 20vw;
+    height: 5vh;
+}
+
+.tabla-talles {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.tabla-talles a {
+    font-family: 'Magra', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: left;
+}
+
+.button {
+    width: 92vw;
+    height: 8vh;
+    text-align: center;
+}
+
+.button-compra {
+    font-family: 'Magra', sans-serif;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    width: 50vh;
+    border-radius: 10px;
+    background-color: #EDBB99;
+    border: none;
+}
+
+.icono-button {
+    width: 5vw;
+    margin-left: 10px;
+    height: 3vh;
+}
+
+.texto-compra {
+    font-family: 'Magra', sans-serif;
+    color: black;
+    font-size: 20px;
+    justify-content: center;
+    border: solid 1px #D35400;
+    border-radius: 50px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+    
+
+.button-texto{
+    width: 80vw;
+}
+
+h6 {
+    font-family: 'Magra', sans-serif;
+    text-decoration: underline;
+    color: #D35400;
+    font-size: 16px;
+}
+
+.descripcion-prenda {
+    font-family: 'Magra', sans-serif;
+    color: black;
+    font-size: 14px;
+}
+
+.titulo-descripcion {
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Magra', sans-serif;
+    color: #D35400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.seccion-relacionados {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.caja-producto {
+    background-color: white;
+    width: 43vw;
+    border: solid 1px #FDF2E9;
+    transition: all 450ms;
+    margin-bottom: 10px;
+}
+
+.caja-producto:hover {
+    border: solid 1px #D35400;
+}
+
+.image-productos {
+    width: 100%;
+}
+
+.icono-carrito {
+    width: 55px;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.cantidad-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 2px #D35400;
+    border-bottom: 10px;
+}
+
+.descripcion {
+    font-family: 'Magra', sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.precio-caja {
+    font-family: 'Magra', sans-serif;
+    font-size: 20px;
+    color: #D35400;
+    margin: 10px 0px;
+}
+
+.datos-producto {
+    padding: 10px;
+}
+
+.cantidad-producto {
+    text-align: center;
+    width: 16vw;
+    align-items: center;
+    font-family: 'Magra', sans-serif;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.link-administrador a{
+    font-family: 'Magra', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: #D35400;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5.5vw;
+}
+
+.button-delete{
+    font-family: 'Magra', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: #D35400;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 5.5vw;
+    border: none;
+    position: relative;
+    top: -4px;
+    font-size: 15px;
+}
+
+.administrador{
+    display: flex;
+}
+
+/*tablet*/
+@media(min-width: 451px) {
+    .muestra-producto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagen-producto {
+        width: 50vw;
+        height: 50vh;
+        padding: 10px
+    }
+
+    h4 {
+        width: auto;
+    }
+
+    .detalle-producto {
+        width: 35vw;
+        display: block;
+        margin: 5px;
+        border-left: solid 1px #D35400;
+        padding: 5px;
+    }
+
+    .precios {
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+    }
+
+    .precio {
+        font-size: 22px;
+    }
+
+    .eleccion-talle, .eleccion-color{
+        font-size: 18px;
+        width: 15vw;
+    }
+
+    .descuento,
+    .precio-descuento {
+        font-size: 15px;
+    }
+
+    .selector-opciones {
+        width: 35vw;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    .seccion-relacionados {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px 10px
+    }
+
+    .caja-producto {
+        width: 45vw;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .precio-caja {
+        font-size: 22px;
+    }
+
+    .caja-descuento {
+        margin-left: 10px;
+    }
+
+    .button-compra {
+        width: 20vh;
+        font-size: 18px;
+    }
+
+    .tabla-talles {
+        margin-top: 20px;
+    }
+
+    .button-texto{
+        display: flex;
+        width: 40vw;
+        justify-content: space-between;
+    }
+
+    .texto-compra{
+        margin: 21px 0 0 0;
+        align-items: center;
+        height: 5vh;
+        text-align: center;
+        width: 40vh;
+    }
+}
+
+/*tablet-2*/
+@media(min-width: 570px) {
+    h4 {
+        width: 45vw;
+    }
+
+    .precio {
+        font-size: 25px
+    }
+
+    .descuento,
+    .precio-descuento {
+        font-size: 18px;
+    }
+
+    .button {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+
+    .button-texto{
+        width: 40vw;
+        margin-left: 10px;
+    }
+
+    .button-compra{
+        width: 27vh;
+        font-size: 20px;
+    }
+
+    .texto-compra{
+        margin: 42px 0 0 0;
+        align-items: center;
+        height: 5vh;
+        text-align: center;
+        width: 54vh;
+    }
+}
+
+/*desktop*/
+@media(min-width: 769px) {
+
+    .imagen-producto {
+        width: 42vw;
+    }
+
+    .detalle-producto {
+        width: auto;
+        padding: 5px 5px 5px 15px;
+    }
+
+    .precios {
+        margin-top: 10px;
+    }
+
+    .precio {
+        font-size: 30px;
+    }
+
+    .descuento,
+    .precio-descuento {
+        font-size: 22px;
+    }
+
+    .selector-opciones {
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+
+    .color {
+        font-size: 22px;
+    }
+
+    .talle {
+        font-size: 22px;
+    }
+
+    .tabla-talles a {
+        font-size: 18px;
+    }
+
+    .button-texto{
+        width: 50vw;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .button-compra {
+        width: 35vh;
+        height: 7vh;
+        margin-top: 10px;
+    }
+
+    .texto-compra{
+        margin: 15px 0 0 0;
+        align-items: center;
+        height: 5vh;
+        text-align: center;
+        width: 55vh;
+    }
+
+    .icono-button {
+        width: 3vw;
+        height: 3vh;
+    }
+
+    .seccion-relacionados {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .caja-producto {
+        width: 23vw;
+        border: solid 1px #FDF2E9;
+        transition: all 450ms;
+    }
+
+    .caja-producto:hover {
+        border: solid 1px #D35400;
+    }
+
+    .descripcion {
+        font-size: 15px;
+    }
+
+    .precio-caja {
+        font-size: 24px;
+    }
+
+    .cantidad-producto {
+        width: 10vw;
+        margin-top: 10px;
+    }
+
+    .icono-carrito {
+        width: 6vw;
+    }
+}
+
+@media(min-width: 1100px) {
+    .main{
+        border-left: solid 40px #fff8f3;
+        border-right: solid 40px #fff8f3;
+    }
+    .muestra-producto{
+        justify-content: center ;
+    }
+
+    .ruta{
+        margin-left: 80px;
+    }
+
+    .imagen-producto {
+        width: 35vw;
+        height: 65vh;
+        padding: 15px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .detalle-producto {
+        width: auto;
+        padding: 5px 5px 5px 20px;
+    }
+
+    .precios {
+        margin-top: 35px;
+        width: 33.5vw;
+    }
+
+    .precio {
+        font-size: 35px;
+        margin-left: 60px;
+    }
+
+    .descuento,
+    .precio-descuento {
+        font-size: 30px;
+    }
+
+    .selector-opciones {
+        margin-top: 20px;
+        justify-content: space-around;
+        width: 35vw;
+    }
+
+    .talles {
+        padding: 20px 10px 10px 30px;
+        font-size: 16px;
+    }
+
+    .eleccion-talle, .eleccion-color{
+        background-color: #EDBB99;
+        color: black;
+        font-size: 20px;
+        border: none;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    .color {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+    .tabla-talles{
+        margin-top: 45px;
+    }
+
+    .tabla-talles a {
+        font-size: 18px;
+    }
+
+    .button-texto {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-left: 0px;
+        align-items: center;
+        width: 40vw;
+    }
+
+    .button-compra {
+        align-items: flex-end;
+        margin-left: -35px;
+        height: 9vh;
+        font-size: 25px;
+        width: 20vw;
+
+    }
+
+    .texto-compra{
+        display: flex;
+        font-size: 20px;
+        width: 12vw;
+        border: solid 1px #D35400;
+        justify-content: center;
+        border-radius: 50px;
+        padding: 0px;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 15px;
+        height: 6vh;
+    }
+
+    .button{
+        width: 40vw;
+    }
+
+    .icono-button {
+        width: 40px;
+        height: 3.5vh;
+    }
+
+    h6{
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    .descripcion-prenda {
+        font-size: 16px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    h3{
+        margin-left: 90px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .caja-producto{
+        width: 18vw;
+    }
+
+    .seccion-relacionados{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .icono-carrito{
+        width: 4vw;
+    }
+}

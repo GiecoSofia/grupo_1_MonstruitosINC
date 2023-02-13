@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/editProduct.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs')%>
+        <main class="main">
+            <h2>EDITAR PRODUCTO</h2>
+            <div class="errores">
+                <ul> 
+                   
+                </ul>
+            </div>
+            <div class="formulario-completo">
+                <form action="/editProduct/<%=producto.id%>/?_method=PUT" method="POST" class="nuevo-producto">
+                    <div class="control-form">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre del Producto" class="item-form" value="<%= producto.nombre %>">
+                        <% if (locals.errors &&  errors.nombre){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.nombre.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <select name="categoria" id="categoria" class="selector-categoria">
+                            <option disabled selected>Categoria Principal</option>
+                            <% for( let i = 0; i < categorias.length; i++ ) { %>
+                                <% if (categorias[i].id === producto.categoria_id) { %>
+                                    <option value="<%=categorias[i].id %>" selected>
+                                        <%=categorias[i].titulo %>
+                                    </option>
+                                <% } else { %>
+                                    <option value="<%=categorias[i].id %>">
+                                        <%=categorias[i].titulo %>
+                                    </option>
+                                <% } %>
+                            <% } %>
+                        </select>
+                        <% if (locals.errors &&  errors.categoria){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.categoria.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <select name="subcategoria" id="subcategoria" class="selector-categoria">
+                            <option disabled selected>Categoria</option>
+                            <% for( let i = 0; i < subcategorias.length; i++ ) { %>
+                                <% if (subcategorias[i].id === producto.subcategoria_id) { %>
+                                    <option value="<%=subcategorias[i].id %>" selected>
+                                        <%=subcategorias[i].titulo %>
+                                    </option>
+                                <% } else { %>
+                                    <option value="<%=subcategorias[i].id %>">
+                                        <%=subcategorias[i].titulo %>
+                                    </option>
+                                <% } %>
+                            <% } %>
+                        </select>
+                        <% if (locals.errors &&  errors.subcategoria){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.subcategoria.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <label class="foto">Foto de Producto</label>
+                        <input type="file" name="foto" accept="jpg" multiple class="foto-producto" id="foto">
+                    </div>
+                    <div class="control-form">
+                        <input type="number" name="precio" id="precio" placeholder="Precio" class="item-form" value="<%= producto.precio %>">
+                        <% if (locals.errors &&  errors.precio){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.precio.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <select name="seccion" id="seccion" class="selector-categoria">
+                            <option disabled selected>Seccion</option>
+                            <% for( let i = 0; i < secciones.length; i++ ) { %>
+                                <% if (secciones[i].id === producto.seccion_id) { %>
+                                    <option value="<%=secciones[i].id %>" selected>
+                                        <%=secciones[i].titulo %>
+                                    </option>
+                                <% } else { %>
+                                    <option value="<%=secciones[i].id %>">
+                                        <%=secciones[i].titulo %>
+                                    </option>
+                                <% } %>
+                            <% } %>
+                        </select>
+                        <% if (locals.errors &&  errors.seccion){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.seccion.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="number" name="descuento" placeholder="Porcentaje de Descuento" class="item-form" value="<%= producto.descuento %>">
+                    </div>
+                    <div class="control-form">
+                        <input type="text" name="talles" id="talles" placeholder="Talles disponibles de la prenda" class="item-form" value="<%= producto.talle %>">
+                        <% if (locals.errors &&  errors.talles){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.talles.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="text" name="colores" id="colores" placeholder="Colores disponibles de la prenda" class="item-form" value="<%= producto.color %>">
+                        <% if (locals.errors &&  errors.colores){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.colores.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion de la prenda" class="item-form" value="<%= producto.descripcion %>">
+                        <% if (locals.errors &&  errors.descripcion){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.descripcion.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-envio">
+                        <label class="datos-envio">Medidas para Envío</label>
+                        <div class="datos">
+                            <div class="info-envio">
+                                <input type="number" name="ancho" id="ancho" placeholder="Ancho (cm)" class="item-envio" value="<%= producto.ancho %>">
+                                <% if (locals.errors &&  errors.ancho){ %>
+                            
+                                    <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.ancho.msg %> </p>
+                                   
+                                <% } %>
+                            </div>
+                            <div class="info-envio">
+                                <input type="number" id="largo" name="largo" placeholder="Largo (cm)" class="item-envio" value="<%= producto.largo %>">
+                                <% if (locals.errors &&  errors.largo){ %>
+                            
+                                    <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.largo.msg %> </p>
+                                   
+                                <% } %>
+                            </div>
+                            <div class="info-envio">
+                                <input type="number" name="alto" id="alto" placeholder="Alto (cm)" class="item-envio" value="<%= producto.alto %>">
+                                <% if (locals.errors &&  errors.alto){ %>
+                            
+                                    <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.alto.msg %> </p>
+                                   
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="boton-formulario">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    <%- include('./partials/footer.ejs')%>
+    <script src="/js/editProductValidation.js"></script>
+</body>
+
+</html>

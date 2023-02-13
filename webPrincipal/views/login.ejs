@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+
+<body>
+    <main>  
+        <div class="caja-completa">
+            <div class="titulo">
+                <a href="/"><img src="/images/logosinfondo.png" class="logo"></a>
+                <h1> Inicia Sesion </h1>
+            </div>
+            <div class="errores">
+                <ul> 
+                   
+                </ul>
+            </div>
+            <form id="Registro-Usuario" method="POST" action="/login">
+                <div class="login-completo">
+                    <div class="email">
+                        Email
+                        <br>
+                        <input type="email" id="email" name="email" value=" <%= locals.oldData ? oldData.email : null %> ">
+                        <% if (locals.errors &&  errors.email){ %>
+                            
+                            <p style="color: #A04000 ;"> <%= errors.email.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="contraseña-se">
+                        Contraseña
+                        <br>
+                        <label class="form-check-label">
+                            <input type="password" id="password" name="password" >
+                            <% if (locals.errors &&  errors.password){ %>
+                            
+                                <p style="color: #A04000 ;"> <%= errors.password.msg %> </p>
+                               
+                            <% } %>
+                        </label>
+                        <p>¿Olvidaste tu contraseña?</p>
+                    </div>
+                    <div style="display: flex; margin-left: 13.5vw; margin-top: 10px;">
+                        <input type="checkbox" name="remember" style="width: 0.8vw;"><p style="margin-left: 10px; margin-bottom: 10px;">Recordar Usuario</p>
+                    </div>
+                    <br>
+                    <label for="boton-sesion"></label>
+                    <a href="/">
+                        <button type="submit" class="boton-formulario">INICIA SESION</button>
+                    </a>
+                    <p>¿Todavia no tenes tu cuenta?<a href="/register">Registrate!</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/loginValidation.js"></script>
+</body>
+
+</html>

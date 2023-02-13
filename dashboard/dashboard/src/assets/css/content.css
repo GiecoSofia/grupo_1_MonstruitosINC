@@ -1,0 +1,96 @@
+.w100{
+    width: 100vw;
+}
+
+.margin{
+    margin-top: 0.6rem;
+}
+
+.bg-content{
+    background-color: #fefcf8;
+}
+
+.bg-list{
+    background-color: #fefcf8;
+}
+
+
+.text{
+    color: #E59866;
+}
+
+.card-1{
+    border-left: 0.25rem solid #E59866
+}
+
+.card-2{
+    border-left: 0.25rem solid #F0B27A
+}
+
+.card-3{
+    border-left: 0.25rem solid #F8C471
+}
+
+.card-4{
+    border-left: 0.25rem solid #F7DC6F 
+}
+
+.text-1{
+    color: #E59866;
+}
+
+.text-2{
+    color: #F0B27A;
+}
+
+.text-3{
+    color: #F8C471;
+}
+
+.text-4{
+    color: #F7DC6F;
+}
+
+.bg-card{
+    background-color: #f6f1ec;
+}
+
+.list{
+    text-align: center;
+    width: 100%
+}
+
+.text-tilte{
+    font-size: 35px;
+    color: #E59866;
+    margin: 1rem;
+}
+
+.bg-card{
+    background-color: #fefcf8;
+}
+
+.margin-card{
+    margin-left: 0;
+}
+
+.card-design{
+    border: solid 1px #E59866;
+    margin: 10px
+}
+
+.card-text{
+    padding: 0.5rem;
+}
+
+.image{
+    width: 50px;
+    justify-content: center;
+    display: block;
+    margin: auto;
+    background-color: #fefcf8;
+}
+
+.size{
+    font-size: 15px;
+}

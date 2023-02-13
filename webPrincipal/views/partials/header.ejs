@@ -1,0 +1,102 @@
+<header>
+    <div class="bienvenida">
+        <p class="mensaje-bienvenida">¡Bienvenidos a nuestro mundo!</p>
+    </div>
+
+
+    <div class="principal-header" >
+
+        <div class="contenedor-logo-busqueda">
+            <a href="/"><img src="/images/logosinfondo.png" class="logo"></a>
+
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar productos" class="barra" required>
+                <button type="submit" class="lupa"><i class="fas fa-search"></i></button>
+            </div>
+
+            <% if (locals.isLogged) { %>
+            <div class="menu-header">
+                <a href="#"><img src="/images/contactomonstruitos.png" class="iconos-menu1"></a>
+                <a href="/productCart"><img src="/images/carritomonstruitos.png" class="iconos-menu"></a>
+                <a href="/user/profile/<%=locals.userLogged.id%>" class="iconos-menu2"><img src="/images/users/<%= locals.userLogged.imagen %>" style="border-radius: 5px ;" class="iconos-menu2"></a>
+                <a href="/logout/" class="iconos-menu2"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <% } else { %>
+            <div class="menu-header">
+                <a href="#"><img src="/images/contactomonstruitos.png" class="iconos-menu1"></a>
+                <a href="/productCart"><img src="/images/carritomonstruitos.png" class="iconos-menu"></a>
+                <a href="/login" class="iconos-menu2"><i class="fas fa-user-alt iconos-menu2"></i>
+                <a href="/register" class="iconos-menu2"><i class="fas fa-user-plus"></i></a>
+            </div>
+            <% } %>
+        </div>
+        <ul class="lista-clasificaciones">
+            <select name="bebes" class="select-header">
+                <option disabled selected>BEBES</option>
+                <option value="1">Remeras</option>
+                <option value="2">Camisas y Blusas</option>
+                <option value="3">Buzos y Sweaters</option>
+                <option value="4">Camperas</option>
+                <option value="5">Pantalones y Leggings</option>
+            </select>
+            <select name="nenes" class="select-header">
+                <option disabled selected>NENES</option>
+                <option value="1">Remeras</option>
+                <option value="2">Camisas y Blusas</option>
+                <option value="3">Buzos y Sweaters</option>
+                <option value="4">Camperas</option>
+                <option value="5">Pantalones y Leggings</option>
+            </select>
+            <select name="nenas" class="select-header">
+                <option disabled selected>NENAS</option>
+                <option value="1">Remeras</option>
+                <option value="2">Camisas y Blusas</option>
+                <option value="3">Buzos y Sweaters</option>
+                <option value="4">Camperas</option>
+                <option value="5">Pantalones y Leggings</option>
+            </select>
+            <a href="#">
+                <li>OFERTAS</li>
+            </a>
+            <a href="/products">
+                <li>VER TODO</li>
+            </a>
+        </ul>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+    <% if (locals.isLoggedAdm) { %>
+        <div style="display: flex ; background-color: #48C9B0; justify-content: center">
+            <h2 style="background-color:#48C9B0; color: #FAD7A0; border: none; margin-top: 5px">MODO ADMINISTRADOR</h2>
+            <div style="display: flex; width: 2vw;">
+                <a href="/newProduct" style="text-decoration: none; color: #FAD7A0;;margin-top: 12px;"><p style="font-size: 18px; font-family: 'Magra', sans-serif; width: 15vw; margin-left: 19.5vw">Nuevo Producto</p></a>
+                <a href="/logoutadm/" class="iconos-menu2"><i class="fas fa-sign-out-alt" style="color: #FAD7A0; margin-top: 5px;"></i></a>
+            </div>
+        </div>
+    <% } %>
+    <div class="slider-info">
+        <img src="/images/slider.jpg" class="slider">
+
+        <ul>
+            <div class="talles-envios-cuotas">
+                <div class="caja-datos">
+                    <li>Consulta nuestra tabla de talles
+                        <br>
+                        <i class="fas fa-table"></i>
+                    </li>
+                </div>
+                <div class="caja-datos">
+                    <li><i class="fas fa-truck"></i>Envios a todo el pais con tu compra superior a $10000 </li>
+                </div>
+                <div class="caja-datos">
+                    <li><i class="fas fa-credit-card"></i>Podes abonar tus compras en 12 cuotas sin interes o con
+                        debito 15% off </i></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+</header>

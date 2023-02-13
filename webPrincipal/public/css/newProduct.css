@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.slider-info{
+    display: none;
+}
+
+/*main*/
+.main{
+    background-color: #D6EAF8;
+    padding: 10px;
+}
+
+.selector{
+    background-color: #D6EAF8;
+    color: #2471A3;
+    padding: 5px;
+    font-size: 18px;
+    width: 15vw;
+    text-decoration: underline;
+}
+
+ul{
+    padding-left: 20vw;
+}
+
+a{
+    color: #2471A3;
+    text-decoration: none;
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+}
+
+
+.opciones-edicion{
+    padding: 5px;;
+}
+
+
+h2{
+    font-family: 'Magra', sans-serif;
+    color: #2471A3;
+    text-align: center;
+    background-color: #D6EAF8;
+    margin-top: 0%;
+    padding: 5px;
+    text-decoration: underline;
+    border: solid 2px white;
+}
+
+.formulario-completo{
+    padding: 10px;
+}
+
+.control-form{
+    width: 80vw;
+    padding: 5px;
+}
+
+.item-form{
+    border-radius: 5px;
+    border: none;
+    height: 5vh;
+    padding: 5px;
+    font-family: 'Magra', sans-serif;
+    width: 85vw;
+}
+
+.selector-categoria{
+    border: solid 2px #2471A3;
+    padding: 1vw;
+    font-family: 'Magra', sans-serif;
+    border-radius: 18vw;
+    color: #2471A3;
+    background-color: #D6EAF8;
+}
+
+.foto, .titulo, .datos-envio{
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+}
+
+.foto-producto{
+    padding: 5px 0 5px 0;
+}
+
+.opciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.opcion-oferta{
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+    padding: 10px 0 5px 0;
+}
+
+.control-envio{
+    width: 70vw;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-envio{
+    width: 20vw;
+    padding: 5px;
+}
+
+.item-envio{
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+    height: 4vh;
+    padding: 5px;
+}
+
+.button{
+    margin: 10px;
+    text-align: center;
+}
+
+
+.boton-formulario{
+    background-color: #2471A3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 35vw;
+}
+
+.boton-formulario:hover{
+    background-color: #85C1E9;
+}
+
+.is-invalid{
+    border: solid 1px #1A5276;
+}
+
+.is-valid{
+    border: solid 1px #85C1E9 ;
+}
+
+.lista-errores{
+    color: #1A5276;
+    font-family: 'Magra', sans-serif;
+}
+
+@media(min-width: 481px){
+
+}
+
+@media(min-width: 769px){
+    ul {
+        padding-left: 10vw;
+    }
+}
+
+@media(min-width: 1100px){
+    .selector{
+        background-color: #D6EAF8;
+        color: #2471A3;
+        padding: 5px;
+        font-size: 20px;
+        width: 15vw;
+        text-decoration: underline;
+    }
+
+    ul{
+        padding-left: 7vw;
+    }
+
+    a{
+        color: #2471A3;
+        text-decoration: none;
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+    }
+
+    .selector-categoria{
+        width: 15vw;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .foto, .titulo, .datos-envio {
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+    }
+
+    .opciones{
+        width: 42vw;
+    }
+
+    .control-form{
+        padding: 10px;
+    }
+
+    .item-form{
+        font-size: 15px;
+    }
+
+    .datos-envio{
+        margin-left: 10px;
+    }
+}

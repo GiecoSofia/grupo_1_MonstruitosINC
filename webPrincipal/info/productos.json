@@ -1,0 +1,861 @@
+[
+ {
+  "id": 1,
+  "nombre": "Buzo s/frisa con Estampado Letras",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto1.jpeg",
+  "precio": 4350,
+  "seccion": " ",
+  "descuento": 15,
+  "talle": [
+   2,
+   4,
+   8
+  ],
+  "color": [
+   "Verde",
+   "Amarillo"
+  ],
+  "descripcion": "Buzo de algodón sin friza, estampado con letras.Lavar con agua fria y usar ciclos de lavado suaves (delicados), para no alterar ni el color ni la estampa. Usar detergentes suaves o neutros. Si el detergente es agresivo las prendas de algodón pierden su color y se deterioran.",
+  "stock": 10,
+  "ancho": 25,
+  "largo": 45,
+  "alto": 10
+ },
+ {
+  "id": 3,
+  "nombre": "Remera Niña",
+  "categoria": "NENAS",
+  "subcategoria": "Remeras",
+  "imagen": "foto3.jpg",
+  "precio": 3700,
+  "seccion": "Productos Destacados",
+  "descuento": " ",
+  "talle": [
+   4,
+   6,
+   8
+  ],
+  "color": [
+   "Negro",
+   "Rosado",
+   "Amarillo"
+  ],
+  "descripcion": "Remera mangas largas con vuelos y detalles en la espalda",
+  "stock": 2,
+  "ancho": 30,
+  "largo": 40,
+  "alto": 15
+ },
+ {
+  "id": 4,
+  "nombre": "Buzzo",
+  "categoria": "NENES",
+  "subcategoria": "Buzos y Sweaters",
+  "imagen": "foto4.jpg",
+  "precio": 7000,
+  "seccion": "Productos Destacados",
+  "descuento": " ",
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Gris",
+   "Azul",
+   "Beige"
+  ],
+  "descripcion": "Buzo con friza y un estampado divertido para que la ropa sea parte de sus juegos",
+  "stock": 6,
+  "ancho": 30,
+  "largo": 40,
+  "alto": 10
+ },
+ {
+  "id": 5,
+  "nombre": "Abrigo Niña",
+  "categoria": "NENAS",
+  "subcategoria": "Camperas",
+  "imagen": "foto5.jpg",
+  "precio": 8600,
+  "seccion": "Productos Destacados",
+  "descuento": " ",
+  "talle": [
+   2,
+   6,
+   8
+  ],
+  "color": [
+   "Blanco"
+  ],
+  "descripcion": "Campera con corderito y estampa colorida y floral",
+  "stock": 10,
+  "ancho": 30,
+  "largo": 15,
+  "alto": 10
+ },
+ {
+  "id": 6,
+  "nombre": "Calza Niña",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto6.jpg",
+  "precio": 4000,
+  "seccion": "Ofertas",
+  "descuento": 15,
+  "talle": [
+   2,
+   4,
+   8
+  ],
+  "color": [
+   "Azul",
+   "Rosa",
+   "Blanca"
+  ],
+  "descripcion": "Calza elastizada con estampado, para acompañar los buenos momentos con comodidad. Prenda apta lavarropas",
+  "stock": 20,
+  "ancho": 10,
+  "largo": 30,
+  "alto": 10
+ },
+ {
+  "id": 7,
+  "nombre": "Remera Gamer",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto7.jpg",
+  "precio": 4100,
+  "seccion": "Ofertas",
+  "descuento": 30,
+  "talle": [
+   6,
+   8,
+   10
+  ],
+  "color": [
+   "Blanco",
+   "Negro",
+   "Verde"
+  ],
+  "descripcion": "Remera mangas largas disponible en varios colores. Prenda apta lavarropas",
+  "stock": 2,
+  "ancho": 15,
+  "largo": 20,
+  "alto": 10
+ },
+ {
+  "id": 8,
+  "nombre": "Remera Niña",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto8.jpg",
+  "precio": 5600,
+  "seccion": "Ofertas",
+  "descuento": 35,
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Rosa",
+   "Lila",
+   "Blanca"
+  ],
+  "descripcion": "Remera junior nena manga larga con estampa amor y tachas.",
+  "stock": 5,
+  "ancho": 15,
+  "largo": 20,
+  "alto": 10
+ },
+ {
+  "id": 9,
+  "nombre": "Pantalon Nene Camuflado",
+  "categoria": "OFERTAS",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto9.jpg",
+  "precio": 6100,
+  "seccion": "Ofertas",
+  "descuento": 20,
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Azul",
+   "Verde",
+   "Negro"
+  ],
+  "descripcion": "Jogger junior varón estampado Camuflado",
+  "stock": 15,
+  "ancho": 20,
+  "largo": 30,
+  "alto": 10
+ },
+ {
+  "id": 10,
+  "nombre": "Remera M. Larga con Estampa",
+  "categoria": "NENES",
+  "subcategoria": "Remeras",
+  "imagen": "foto10.jpeg",
+  "precio": 1900,
+  "seccion": " ",
+  "descuento": 45,
+  "talle": [
+   6,
+   8,
+   10
+  ],
+  "color": [
+   "Gris",
+   "Roja",
+   "Azul"
+  ],
+  "descripcion": "Remera mangas largas con estampado, disponible en varios colores",
+  "stock": 5,
+  "ancho": 15,
+  "largo": 25,
+  "alto": 15
+ },
+ {
+  "id": 11,
+  "nombre": "Jean Chupin",
+  "categoria": "NENES",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto11.jpeg",
+  "precio": 4800,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   4,
+   6,
+   10
+  ],
+  "color": [
+   "Azul"
+  ],
+  "descripcion": "Chupín junior varón jean elastizado con lavado stonewash y localizado botón vaquero metálico en el centro delantero lleva elástico interno con ojal para ajustar cintura hasta talle 8",
+  "stock": 0,
+  "ancho": 15,
+  "largo": 25,
+  "alto": 10
+ },
+ {
+  "id": 12,
+  "nombre": "Campera Friza Yeah",
+  "categoria": "NENES",
+  "subcategoria": "Camperas",
+  "imagen": "foto12.jpeg",
+  "precio": 5300,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   8,
+   10
+  ],
+  "color": [
+   "Verde",
+   "Roja",
+   "Azul"
+  ],
+  "descripcion": "Campera junior varón frisa peinada con  estampa Yeah puños ribebé a tono. Lleva cinta hilera. Composición 65% algodón, 35% poliéster.",
+  "stock": 10,
+  "ancho": 30,
+  "largo": 40,
+  "alto": 15
+ },
+ {
+  "id": 13,
+  "nombre": "Pantalon de Jogging c/ Friza",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto13.jpg",
+  "precio": 3500,
+  "seccion": " ",
+  "descuento": 10,
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Azul",
+   "Gris",
+   "Negro"
+  ],
+  "descripcion": " ",
+  "stock": 3,
+  "ancho": 15,
+  "largo": 40,
+  "alto": 20
+ },
+ {
+  "id": 14,
+  "nombre": "Buzo Corto Piel c/ Lurex",
+  "categoria": "NENAS",
+  "subcategoria": "Buzos y Sweaters",
+  "imagen": "foto14.jpg",
+  "precio": 6600,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Rosa",
+   "Lila",
+   "Blanco"
+  ],
+  "descripcion": "Buzo junior nena corto con capucha de piel con lurex. Composición 100% poliéster.",
+  "stock": 10,
+  "ancho": 20,
+  "largo": 45,
+  "alto": 20
+ },
+ {
+  "id": 15,
+  "nombre": "Remera Nena c/ Estampa",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto15.jpg",
+  "precio": 2150,
+  "seccion": " ",
+  "descuento": 30,
+  "talle": [
+   4,
+   6
+  ],
+  "color": [
+   "Blanco",
+   "Rojo",
+   "Lila"
+  ],
+  "descripcion": "Remera junior nena manga larga con estampa star.",
+  "stock": 6,
+  "ancho": 15,
+  "largo": 25,
+  "alto": 10
+ },
+ {
+  "id": 16,
+  "nombre": "Campera BB Piel",
+  "categoria": "BEBES",
+  "subcategoria": "Camperas",
+  "imagen": "foto16.jpg",
+  "precio": 6642,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   1,
+   2,
+   3
+  ],
+  "color": [
+   "Rosa",
+   "Fuscia",
+   "Coral"
+  ],
+  "descripcion": "Campera bebé nena piel con puños de la misma tela y cierre de plástico. Composición 100% poliéster.",
+  "stock": 9,
+  "ancho": 25,
+  "largo": 45,
+  "alto": 20
+ },
+ {
+  "id": 17,
+  "nombre": "Jean BB Nena",
+  "categoria": "BEBES",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto17.jpg",
+  "precio": 4738,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   4,
+   5,
+   6
+  ],
+  "color": [
+   "Azul",
+   "Negro"
+  ],
+  "descripcion": "Chupín jean bebé nena elastizado con bordado arco iris con lavado stonewash y localizado, broche metálico en el centro delantero, lleva elástico en la cintura.",
+  "stock": 15,
+  "ancho": 15,
+  "largo": 20,
+  "alto": 15
+ },
+ {
+  "id": 18,
+  "nombre": "Leggin BB Nena Batik",
+  "categoria": "BEBES",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto18.jpg",
+  "precio": 3150,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "color": [
+   "Chicle",
+   "Coral",
+   "Amarillo"
+  ],
+  "descripcion": " ",
+  "stock": 8,
+  "ancho": 20,
+  "largo": 25,
+  "alto": 15
+ },
+ {
+  "id": 19,
+  "nombre": "Leggin BB Corta Estrellas y Arco Iris",
+  "categoria": "BEBES",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto19.jpg",
+  "precio": 2520,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   4,
+   5,
+   6
+  ],
+  "color": [
+   "Rosa",
+   "Lila"
+  ],
+  "descripcion": " ",
+  "stock": 12,
+  "ancho": 20,
+  "largo": 30,
+  "alto": 15
+ },
+ {
+  "id": 20,
+  "nombre": "Remera BB Nena",
+  "categoria": "BEBES",
+  "subcategoria": "Remeras",
+  "imagen": "foto20.jpg",
+  "precio": 1540,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   3,
+   4,
+   5
+  ],
+  "color": [
+   "Azul",
+   "Salmon"
+  ],
+  "descripcion": "Remera bebé nena rayada manga larga algodón tejido con estampa carita lleva botón en la espalda en todos los talles.",
+  "stock": 16,
+  "ancho": 25,
+  "largo": 35,
+  "alto": 20
+ },
+ {
+  "id": 21,
+  "nombre": "Remera BB Nena Corazon",
+  "categoria": "BEBES",
+  "subcategoria": "Remeras",
+  "imagen": "foto21.jpg",
+  "precio": 2380,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   5,
+   6
+  ],
+  "color": [
+   "Blanco",
+   "Crudo",
+   "Celeste"
+  ],
+  "descripcion": "Remera bebé nena manga larga con estampa corazón lleva botón en la espalda en todos los talles.",
+  "stock": 6,
+  "ancho": 30,
+  "largo": 35,
+  "alto": 20
+ },
+ {
+  "id": 22,
+  "nombre": "Remera BB Varon",
+  "categoria": "BEBES",
+  "subcategoria": "Remeras",
+  "imagen": "foto22.jpg",
+  "precio": 2250,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "color": [
+   "Azul",
+   "Verde"
+  ],
+  "descripcion": "Remera bebé varón manga larga con  estampa frente y dorso Dinosaurio. Apertura lateral con broche aro hasta el talle 3/18 meses. Cuello de ribebé a tono.",
+  "stock": 12,
+  "ancho": 20,
+  "largo": 35,
+  "alto": 15
+ },
+ {
+  "id": 23,
+  "nombre": "Remera BB Varon Pelota",
+  "categoria": "BEBES",
+  "subcategoria": "Remeras",
+  "imagen": "foto23.jpg",
+  "precio": 2480,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   4,
+   5,
+   6
+  ],
+  "color": [
+   "Rojo",
+   "Gris"
+  ],
+  "descripcion": "Remera bebé varón manga larga con estampa Pelota. Apertura lateral con broche aro hasta el talle 3/18 meses. Cuello de ribebé a tono.",
+  "stock": 10,
+  "ancho": 30,
+  "largo": 35,
+  "alto": 15
+ },
+ {
+  "id": 24,
+  "nombre": "Blusa BB Lanilla Floreada",
+  "categoria": "BEBES",
+  "subcategoria": "Camisas y Blusas",
+  "imagen": "foto24.jpg",
+  "precio": 3970,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   2,
+   3,
+   4
+  ],
+  "color": [
+   "Azul",
+   "Salmon",
+   "Lila"
+  ],
+  "descripcion": "Buzo bebé nena lanilla estampada florones lleva apertura en forma de gota en todos los talles.",
+  "stock": 10,
+  "ancho": 30,
+  "largo": 30,
+  "alto": 15
+ },
+ {
+  "id": 25,
+  "nombre": "Body Chomba BB Varon",
+  "categoria": "BEBES",
+  "subcategoria": "Camisas y Blusas",
+  "imagen": "foto25.jpg",
+  "precio": 2570,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "color": [
+   "Verde",
+   "Azul",
+   "Negro"
+  ],
+  "descripcion": "Body chomba. Cuello camisero. Material: Algodón",
+  "stock": 6,
+  "ancho": 15,
+  "largo": 30,
+  "alto": 10
+ },
+ {
+  "id": 26,
+  "nombre": "Chomba Niño M/ Corta",
+  "categoria": "NENES",
+  "subcategoria": "Camisas y Blusas",
+  "imagen": "foto26.jpg",
+  "precio": 2680,
+  "seccion": "Productos Destacados",
+  "descuento": " ",
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Verde",
+   "Gris"
+  ],
+  "descripcion": " ",
+  "stock": 3,
+  "ancho": 20,
+  "largo": 40,
+  "alto": 20
+ },
+ {
+  "id": 27,
+  "nombre": "Remera Nena Escrita",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto27.jpg",
+  "precio": 3784,
+  "seccion": " ",
+  "descuento": 35,
+  "talle": [
+   6,
+   8,
+   10
+  ],
+  "color": [
+   "Rosa",
+   "Azul",
+   "Beige"
+  ],
+  "descripcion": " ",
+  "stock": 15,
+  "ancho": 25,
+  "largo": 45,
+  "alto": 15
+ },
+ {
+  "id": 28,
+  "nombre": "Campera Nena Piel",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto28.jpg",
+  "precio": 8260,
+  "seccion": " ",
+  "descuento": 25,
+  "talle": [
+   10,
+   12,
+   14
+  ],
+  "color": [
+   "Crudo",
+   "Negro",
+   "Fuscia"
+  ],
+  "descripcion": "Campera junior nena piel con capucha, bolsillos canguro y cierre.",
+  "stock": 4,
+  "ancho": 45,
+  "largo": 60,
+  "alto": 25
+ },
+ {
+  "id": 29,
+  "nombre": "Buzo Nene c/ Bolsillo",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto29.jpg",
+  "precio": 6320,
+  "seccion": " ",
+  "descuento": 15,
+  "talle": [
+   10,
+   12,
+   14
+  ],
+  "color": [
+   "Verde",
+   "Negro",
+   "Beige"
+  ],
+  "descripcion": "Buzo junior varón frisa peinada liso con  bolsillo plaqué. Cuello de ribebé a tono.",
+  "stock": 6,
+  "ancho": 45,
+  "largo": 60,
+  "alto": 25
+ },
+ {
+  "id": 30,
+  "nombre": "Vestido BB Nena Rayada",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto30.jpg",
+  "precio": 8034,
+  "seccion": " ",
+  "descuento": 30,
+  "talle": [
+   1,
+   2,
+   3
+  ],
+  "color": [
+   "Chicle",
+   "Fuscia",
+   "Verde Agua"
+  ],
+  "descripcion": " ",
+  "stock": 8,
+  "ancho": 25,
+  "largo": 30,
+  "alto": 20
+ },
+ {
+  "id": 31,
+  "nombre": "Jogger BB Varon",
+  "categoria": "OFERTAS",
+  "subcategoria": " ",
+  "imagen": "foto31.jpg",
+  "precio": 2703,
+  "seccion": " ",
+  "descuento": 45,
+  "talle": [
+   1,
+   2,
+   3
+  ],
+  "color": [
+   "Rojo",
+   "Mostaza",
+   "Gris"
+  ],
+  "descripcion": " ",
+  "stock": 8,
+  "ancho": 25,
+  "largo": 30,
+  "alto": 20
+ },
+ {
+  "id": 32,
+  "nombre": "Remera Nena Unicornio",
+  "categoria": "NENAS",
+  "subcategoria": "Remeras",
+  "imagen": "foto32.jpg",
+  "precio": 2250,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   2,
+   4,
+   6
+  ],
+  "color": [
+   "Azul",
+   "Lila"
+  ],
+  "descripcion": "Remera bebé nena manga larga con estampa con brillo unicornio flores lleva botón en la espalda en todos los talles.",
+  "stock": 5,
+  "ancho": 25,
+  "largo": 30,
+  "alto": 20
+ },
+ {
+  "id": 33,
+  "nombre": "Campera Sporty Nena",
+  "categoria": "NENAS",
+  "subcategoria": "Camperas",
+  "imagen": "foto33.jpg",
+  "precio": 12350,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   6,
+   8,
+   10
+  ],
+  "color": [
+   "Negro",
+   "Chicle"
+  ],
+  "descripcion": " ",
+  "stock": 5,
+  "ancho": 40,
+  "largo": 55,
+  "alto": 25
+ },
+ {
+  "id": 34,
+  "nombre": "Jogger Friza Elastizada",
+  "categoria": "NENES",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto34.jpg",
+  "precio": 5880,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   6,
+   8,
+   10
+  ],
+  "color": [
+   "Negro",
+   "Gris"
+  ],
+  "descripcion": "Jogger junior varón estampado frisa elastizada Manchas puños de ribebé, lleva elástico en la cintura.",
+  "stock": 5,
+  "ancho": 40,
+  "largo": 55,
+  "alto": 25
+ },
+ {
+  "id": 35,
+  "nombre": "Jogger Mini BB Corazon",
+  "categoria": "BEBES",
+  "subcategoria": "Pantalones y Leggings",
+  "imagen": "foto35.jpg",
+  "precio": 2734,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   1,
+   2,
+   3
+  ],
+  "color": [
+   "Rosa",
+   "Lila"
+  ],
+  "descripcion": "Jogger mini bebé nena frisa peinada con estampa corazón y puños de ribebé, cintura elastizada.",
+  "stock": 6,
+  "ancho": 25,
+  "largo": 55,
+  "alto": 25
+ },
+ {
+  "id": 36,
+  "nombre": "Conjunto BB Perritos",
+  "categoria": "BEBES",
+  "subcategoria": "Remeras",
+  "imagen": "foto36.jpg",
+  "precio": 2734,
+  "seccion": " ",
+  "descuento": " ",
+  "talle": [
+   4,
+   5,
+   6
+  ],
+  "color": [
+   "Azul",
+   "Gris"
+  ],
+  "descripcion": " ",
+  "stock": 10,
+  "ancho": 35,
+  "largo": 55,
+  "alto": 25
+ }
+]

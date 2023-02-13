@@ -1,0 +1,126 @@
+[
+ {
+  "id": 1,
+  "nombreyapellido": "  Sofia Gieco",
+  "nombreusuario": "Sofi",
+  "email": "sofiagieco@gmail.com",
+  "telefono": "   3492 582572   ",
+  "provincia": "Santa Fe",
+  "localidad": "Rafaela",
+  "password": "$2a$10$qDvkftioDXuXh1ymLnQ.7uVxpG2u2GoEsjRN2hMSOx4aDsthslpIa",
+  "passwordcheck": "Sofia1709",
+  "imagen": "1665446651384_img.jpg"
+ },
+ {
+  "id": 2,
+  "nombreyapellido": "Gisela Burgos",
+  "nombreusuario": "Gise",
+  "email": "giseburgos13@gmail.com",
+  "telefono": "3492673848",
+  "provincia": "Santa Fe",
+  "localidad": "Rafaela",
+  "password": "$2a$10$FwMwsDByZ1diGhGIUnchXuzMY8rmRSzsDxjymrmWvoz8UEaOnIz12",
+  "passwordcheck": "Gisela16",
+  "imagen": "1665539282138_img.jfif"
+ },
+ {
+  "id": 3,
+  "nombreyapellido": "Jesica Miranda",
+  "nombreusuario": "Jesi",
+  "email": "jesimir2@gmail.com",
+  "telefono": "3492567489",
+  "provincia": "Santa Fe",
+  "localidad": "Rafaela",
+  "password": "$2a$10$kVUaheluOjJxHMgrsbRwBODrV8K3T/bg8TAqKpN3jWMaA8EGnxbgS",
+  "imagen": "1665665559508_img.jpg"
+ },
+ {
+  "id": 4,
+  "nombreyapellido": "Sofia Perez",
+  "nombreusuario": "Sofita",
+  "email": "sofiap@gmail.com",
+  "telefono": "34138735678",
+  "provincia": "Salta",
+  "localidad": "Santa Fe",
+  "password": "$2a$10$7BBObNJuLe0vGGG4amR6E.iI8KNEet5/X9fjUCAZid1XplRbhEc1y",
+  "imagen": "1665666052398_img.jpg"
+ },
+ {
+  "id": 5,
+  "nombreyapellido": "Magali Becchio",
+  "nombreusuario": "Magui",
+  "email": "magui12@gmail.com",
+  "telefono": "3491327568",
+  "provincia": "Corrientes",
+  "localidad": "Rosario",
+  "password": "$2a$10$MOEDASUPaalz4Elg9OEYCegiMzft55WnKo2dPihbeUjzvD0QxBedO",
+  "imagen": "1665700703096_img.jpg"
+ },
+ {
+  "id": 6,
+  "nombreyapellido": "Daiana Vizgarra",
+  "nombreusuario": "Dai",
+  "email": "daiana12@gmail.com",
+  "telefono": "3491412850",
+  "provincia": "Buenos Aires",
+  "localidad": "Corrientes",
+  "password": "$2a$10$kAry3d9mmJmftlCDGUDcy.0vtTkxQBhlVxT..Obpya9bhezLU1s9C",
+  "imagen": "1665787278943_img.jpg"
+ },
+ {
+  "id": 7,
+  "nombreyapellido": "Miriam Becchio",
+  "nombreusuario": "Miriam",
+  "email": "miriam24@gmail.com",
+  "telefono": "3491493721",
+  "provincia": "Santa Fe",
+  "localidad": "Rafaela",
+  "password": "$2a$10$7naDyV3bdlZqDLtM1VGvwOPOkl3mgsKSGAsL7cC09LDaVePs.yMPW",
+  "imagen": "1665787438207_img.jpg"
+ },
+ {
+  "id": 8,
+  "nombreyapellido": "Jimena",
+  "nombreusuario": "Castoldi",
+  "email": "jime_castoldi@gmail.com",
+  "telefono": "3491493721",
+  "password": "$2a$10$qyDZxFU2KW9c9cr9pDK3fe4KrHyqE441OdmNgTdJW4S5FHEhzQDmu",
+  "imagen": "1665787596488_img.jpg"
+ },
+ {
+  "id": 9,
+  "nombreyapellido": "Majo Clemente",
+  "nombreusuario": "Majo",
+  "email": "majoclemente12@gmail.com",
+  "telefono": "381456734",
+  "provincia": "Tucumán",
+  "localidad": "San Miguel de Tucumán",
+  "password": "$2a$10$CMSvYzh5wESf//ktjH3NOOm11xuOopnkIizMr9Q.CZOtCfQTLk8O2",
+  "imagen": "1665836672489_img.jpg"
+ },
+ {
+  "id": 10,
+  "nombreyapellido": "Evangelina Ronco",
+  "nombreusuario": "evange",
+  "email": "evaron12@gmail.com",
+  "telefono": "3491456734",
+  "provincia": "Santa Fe",
+  "localidad": "Santa Fe",
+  "password": "$2a$10$ms6u0cs3.DDfo7ruMPYgbOqh.HZdNUDcv7b7hIjBj8anpErW3DCR.",
+  "imagen": "1665836819796_img.webp"
+ },
+ {
+  "id": 11,
+  "nombreyapellido": "prueba",
+  "nombreusuario": "prueba",
+  "email": "prueba@gmail.com",
+  "telefono": "   3492 582572   ",
+  "provincia": "Santa Fe",
+  "localidad": "Santa Fe",
+  "calle": "cossettini",
+  "numero": "1070",
+  "departamento": "",
+  "password": "$2a$10$Wi2qGw75yttMNcYdzBW2l.cb8xHNN89HZPjxpZg.hXQToyOjAvPBi",
+  "imagen": "1665874665214_img.jpg"
+ }
+]

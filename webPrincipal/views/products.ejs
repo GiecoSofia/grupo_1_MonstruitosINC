@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/products.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <%- include('./partials/header.ejs')%>
+    <h2> TODOS LOS PRODUCTOS </h2>
+    <main class="main-product">
+        <% for( let i = 0; i < productos.length; i++ ) { %>
+            <article class="producto">
+                <a href="/productDetail/<%= productos[i].id %> ">
+                    <img src="/images/products/<%= productos[i].imagen %>"  class="imag">
+                </a>
+                <div class="individual-producto">
+                    <p class="description"><%= productos[i].nombre %></p>
+                    <div class="price-discount">
+                        <% if (productos[i].descuento != 0) { %>
+                        <p class="precio-oferta" style="text-decoration: line-through;">$<%= productos[i].precio %></p>
+                        <p class="off">% <%= productos[i].descuento%></p>
+                        <% } else { %>
+                        <p class="precio-oferta">$<%= productos[i].precio %></p>
+                        <% } %>
+                         
+                        <% if (productos[i].descuento) { %>
+                            <%  
+                            let precioFinal = productos[i].precio - ((productos[i].precio * productos[i].descuento)/ 100);
+                            %> 
+                            <p class="price-final">$<%=precioFinal%> </p>
+                        <% } %>
+                    </div>
+                    <div class="talle-cantidad">
+                        <p class="talle-selector">
+                            <select class="select-talle" name="tallesselector">
+                                <option disabled selected>Talles</option> 
+                                <option><%= productos[i].talle %></option>
+                            </select>
+                        </p>
+                        <div class="carro-cantidad">
+                            <div class="cantidad">
+                                <select class="selector-cantidad" name="cantidad">
+                                    <option disabled selected>Cantidad</option> 
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                            <a href="#"><img src="/images/carritomonstruitos.png" class="icono-carro"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        <% } %>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+</body>
+</html>

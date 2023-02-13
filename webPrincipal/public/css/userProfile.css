@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #FEF9E7;
+   
+}
+
+.slider-info{
+    display: none;
+}
+
+h3{
+    width: 40vh;
+    color: #DC7633;
+    font-size: 18px;
+    font-family: 'Magra', sans-serif;
+    border-bottom: solid 1px #DC7633;
+    border-left: 7px;
+    padding: 5px;
+    margin-left: 20px
+}
+
+.saludo{
+    font-family: 'Magra', sans-serif;
+    font-size: 18px ;
+    margin-bottom: 10px;
+}
+
+.avatar{
+    width: 45vw;
+    height: 35vh
+}
+
+h6{
+    font-family: 'Magra', sans-serif;
+    font-size: 16px ;
+}
+
+.datos{
+    font-family: 'Magra', sans-serif;
+    font-size: 14px;
+    padding: 3px;
+}
+
+.editar, .eliminar {
+    text-decoration: none;
+    color: black;
+    font-family: 'Magra', sans-serif;
+    font-size: 14px;
+    background-color: #F5CBA7;
+    border: none;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.pedidos{
+    font-family: 'Magra', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px;
+    text-align: center;
+}
+
+.pedidos-titulo{
+    font-family: 'Magra', sans-serif;
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+    text-align: center;
+}
+
+.perfil1{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 40vh;
+}
+
+.funciones{
+    display: flex;
+    width: 41vw;
+    justify-content: space-between;
+    position: relative;
+    left: 56vw;
+    bottom: 7vw;
+}
+
+.caja-envio{
+    width: 40vw;
+    height: 10vh;
+    border: solid 1px #DC7633;
+    padding: 5px;
+    position: relative;
+    left: 5vw;
+    bottom: 2vw;
+    margin-left: 15px;
+}
+
+.perfil-2{
+    display: flex;
+}
+
+.compra{
+    font-family: 'Magra', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.caja-completa{
+    width: 90vw;
+}
+
+@media(min-width: 481px){
+    h3{
+        width: 45vh;
+        font-size: 20px;
+    }
+
+    .perfil1{
+        width: 80vw;
+        margin-left: 25px;
+        height: 45vh;
+    }
+
+    .saludo{
+        margin-bottom: 20px;
+        margin-left: 1vw;
+    }
+
+    .avatar {
+        width: 43vw;
+        height: 40vh;
+    }
+
+    .datos-personales{
+        position: relative;
+        position: relative;
+        top: 6vw;
+    }
+
+    .funciones{
+        width: 30vw;
+        left: 57vw;
+        bottom: 2vw
+    }
+
+    .caja-completa{
+        margin-top: 5vw
+    }
+
+    .compra{
+        text-align: center;
+    }
+}
+
+@media(min-width: 769px){
+    h3 {
+        width: 50vh;
+        font-size: 24px;
+    }
+
+    .perfil1{
+        height: 50vh;
+        margin: auto;
+        width: 65vw;
+    }
+
+    .saludo{
+        font-size: 20px;
+    }
+
+    .avatar{
+        width: 35vw;
+        height: 45vh;
+    }
+
+    h6{
+        font-size: 18px;
+    }
+
+    .datos{
+        font-size: 16px;
+    }
+
+    .datos-personales{
+        top: 5vw;
+    }
+
+    .funciones{
+        width: 25vw;
+        left: 60vw;
+        bottom: 3vw;
+    }
+
+    .editar, .eliminar{
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .pedidos{
+        font-size: 14px;
+    }
+
+    .pedidos-titulo, .compra{
+        font-size: 16px;
+    }
+
+    .perfil-2{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 11vw;
+        width: 69vw;
+    }
+}
+
+@media(min-width: 1100px){
+    h3{
+        width: 55vh;
+        font-size: 28px;
+        padding: 5px;
+        margin-left: 40px
+    }
+
+    .perfil1{
+        width: 45vw;
+        margin: auto;
+        
+    }
+
+    .saludo{
+        margin-left: 5px;
+    }
+
+    .avatar{
+        width: 25vw;
+        height: 44vh;
+    }
+
+    .datos-personales{
+        top: 2.5vw;
+    }
+
+    h6{
+        font-size: 20px;
+    }
+
+    .datos{
+        font-size: 18px;
+    }
+
+    .funciones{
+        width: 17vw;
+        left: 58.3vw;
+        bottom: 3vw;
+    }
+
+    .eliminar, .editar{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .caja-envio{
+        width: 20vw;
+    }
+
+    .perfil-2{
+        left: 22vw;
+        width: 48vw;
+    }
+}

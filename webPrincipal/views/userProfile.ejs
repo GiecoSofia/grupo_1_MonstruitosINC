@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/userProfile.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <h3>Bienvenido a Tu Perfil</h3>
+        <br><br>
+
+        <div class="perfil1">
+            <div class="saludo-imag">
+                <p class="saludo"><%= user.nombreusuario %></p>
+                <img src="/images/users/<%= user.imagen %> " class="avatar">
+            </div>
+
+            <div class="datos-personales">
+                <h6>Datos Personales</h6>
+                <br>
+                <p class="datos">Nombre: <%= user.nombreyapellido %></p>
+                <p class="datos">Email: <%= user.email%></p>
+                <p class="datos">Telefono: <%= user.telefono%></p>
+                <br>
+                <h6>Datos de Envío</h6>
+                <p class="datos">Provincia: <%= user.provincia%></p>
+                <p class="datos">Localidad: <%= user.localidad%></p>
+                <p class="datos">Direccion: <%= user.calle + " " + user.numero + " " + user.departamento%></p>
+            </div>
+
+        </div>
+
+        <div class="funciones">
+            <a href="/user/profile/edit/<%=user.id%> " class="editar">Editar Datos</a>
+
+            <form action="/user/profile/delete/<%=user.id%>/?_method=DELETE" method="POST">
+                <button type="submit" class="eliminar">Eliminar Perfil</button>
+            </form>
+        </div>
+
+        <div class="caja-completa">
+            <div class="perfil-2">
+                <div class="caja-envio">
+                    <a href="#" style="text-decoration: none ;"> 
+                        <p class="pedidos-titulo">Mis Pedidos</p>
+                        <p class="pedidos">Podés tener registro de tus compras con nosotros</p> 
+                    </a>
+                </div>
+
+                <div class="caja-envio">
+                    <a href="/products" style="text-decoration: none ;"> 
+                        <p class="compra">¡Quiero empezar a comprar!</p> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+</body>
+</html>

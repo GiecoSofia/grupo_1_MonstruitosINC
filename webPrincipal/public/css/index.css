@@ -1,0 +1,1454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.bienvenida{
+    width: 100%;
+    background-color: #48C9B0;
+    display: block;
+}
+
+.mensaje-bienvenida{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Magra', sans-serif;
+}
+
+.logo{
+    width: 18%;
+    align-self: stretch;
+    position: absolute;
+    top: 40px;
+}
+
+.contenedor-logo-busqueda{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.principal-header{
+    background-color: #D5F5E3 ;
+    height: 20vw;
+    padding: 8px;
+}
+
+.busqueda{
+    width: 65vw;
+    margin-top: 15px;
+    position: absolute;
+    left: 25vw;
+    top: 30px;
+}
+
+.barra{
+    font-family: 'Magra', sans-serif;
+    width: 50%;
+    padding: 5px 0px 5px 30px;
+    border: solid 1px #48C9B0;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.lupa{
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    color: #48C9B0;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.lista-clasificaciones{
+    font-family: 'Magra', sans-serif;
+    color: #EB984E;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    display: none;
+}
+
+.lista-clasificaciones a{
+    font-family: 'Magra', sans-serif;
+    color: #EB984E;
+    font-size: 18px;
+    text-decoration: none;
+    padding-top: 4px;
+}
+
+.select-header{
+    font-family: 'Magra', sans-serif;
+    color: #EB984E;
+    font-size: 19px;
+    border-radius: 0;
+    background-color: #D5F5E3;
+    border: none;
+    width: 7vw;
+    list-style: none;
+}
+
+.menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    position: absolute;
+    top: 9vw;
+    left: 65vw;
+    font-size: 15px;
+}
+
+.iconos-menu1{
+    width: 35px;
+   margin: 5px;
+   display: none;
+}
+
+.iconos-menu{
+    width: 30px;
+   margin: 5px;
+}
+
+.iconos-menu2{
+    width: 40px;
+    margin: 10px;
+    color: #117864;
+}
+
+.burger-menu{
+    color: white;
+    display: block;
+    align-items: center;
+    background-color: #48C9B0;
+    border-radius: 6px;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    background-position: center;
+    position: absolute;
+    top: 21vw;
+    left: 48vw;
+}
+
+.slider {
+    width: 100vw;
+    height: 40vw;
+    margin: 0%;
+}
+
+.talles-envios-cuotas{
+    font-family: 'Magra', sans-serif;
+    color: #EB984E;    
+    background-color: white;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    margin: 2%;
+}
+
+.caja-datos{
+    width: 28vw;
+    border: solid 2px #48C9B0;
+    padding: 5px;
+}
+
+
+/*main*/
+
+main{
+    background-color: #FDF2E9;
+}
+
+
+h2{
+    font-family: 'Magra', sans-serif;
+    color: #FAD7A0;
+    text-align: center;
+    background-color: #48C9B0;
+    margin-top: 0%;
+    padding: 0%;
+}
+.producto {
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-top: 5vw;
+    width: 85%;
+    border: solid 1vw #48C9B0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.imag{
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    margin-left: 4vw;
+}
+
+.individual-producto{
+    width: 100%;
+    border-top: solid 1px #48C9B0;
+    padding: 0px;
+}
+
+.description {
+    font-family: 'Magra', sans-serif;
+    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    margin-top: 10px;
+}
+
+.price{
+    font-family: 'Magra', sans-serif;
+    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    margin-top: 5px;
+}
+
+.price-oferta{
+    font-family: 'Magra', sans-serif;
+    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    margin-top: 5px;
+    text-decoration: line-through;
+}
+
+.discount{
+    padding: 5px;
+    border: solid 1px #48C9B0;
+    margin: 0 0 0 30px;
+    border-radius: 50%;
+}
+
+.price-discount{
+    font-family: 'Magra', sans-serif;
+    font-size: 20px;
+    display: flex;
+}
+
+.carro-cantidad{
+    margin-right: 0;
+    width: 40vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.talle-cantidad{
+    display: flex;
+    justify-content: space-around;
+}
+
+.talle{
+    font-family: 'Magra', sans-serif;
+    font-size: 16px;
+    padding: 20px 10px 10px 35px;
+}
+
+.cantidad{
+    align-self: center;
+    padding: 0px 0 3px 0;
+}
+
+.icono-carro {
+    display: block;
+    font-size: 5px;
+    padding: 0px 0 15px 0;
+    width: 13vw; 
+}
+ 
+.publicidad1{
+    display: none;
+    width: 100vw;
+}
+
+.niños-corriendo{
+    width: 100vw;
+    margin:0%;
+}
+
+select{
+    border: solid 2px #48C9B0;
+    padding: 1vw;
+    font-family: 'Magra', sans-serif;
+    border-radius: 18vw;
+    color: #48C9B0;
+    width: 16vw;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.description, .price, .price-discount, .discount {
+    text-decoration: none;
+    color: black;
+}
+
+/*footer*/
+
+.footer{
+    background-color: #b4dced;    
+}
+
+.contenedor-cajas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.newsletter{
+    font-family: 'Magra', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    border: solid 4px #48C9B0;
+    width: 100vw;
+}
+
+.texto-newsletter{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.boton-news{
+    font-size: 4vw;
+    background-color: white;
+    border: none;
+    color: #48C9B0;
+    position: relative;
+    left: -6vw;
+    top: 0.5vw;
+}
+
+.casilla-mail{
+    margin-bottom: 20px;
+    width: 55vw;
+    padding: 6px;
+    border: solid 2px #48C9B0;
+    border-radius: 10px;
+    font-family: 'Magra', sans-serif;
+    font-size: 12px;
+}
+
+
+
+.logo-footer{
+    width: 18vw;
+    position: absolute;
+    left: 3vw;
+    margin-top: 5vw;
+}
+
+.descripcion-marca{
+    font-family: 'Magra', sans-serif;
+    font-size: 12px;
+    width: 73vw;
+    position: relative;
+    top: 2vw;
+    left: 11vw;
+    text-align: left;
+}
+
+.caja2 ul{
+    display: none;
+}
+
+.caja3 ul{
+    display: none;
+}
+
+h5{
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify;
+    position: relative;
+    left: -31vw;
+    top: 4vw;
+}
+
+.iconos-footer{
+    width: 33vw;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    top: -16vw;
+    left: 10vw;
+}
+
+.facebook{
+    color: blue;
+    padding: 1vw 2vw 2vw 2vw;
+    width: 10vw;
+}
+
+.instagram{
+    color: rgb(180, 20, 108);
+    padding: 1vw 2vw 2vw 2vw;
+    width: 10vw;
+}
+
+.icono{
+    width: 5vw;
+}
+
+.ubicacion{
+    color: black;
+    padding: 1vw 2vw 2vw 2vw;
+    width: 10vw;
+}
+
+.caja4{
+    display: flex;
+    width: 57vw;
+    justify-content: space-between;
+    position: relative;
+    top: -20vw;
+    left: 20vw;
+}
+
+.boton-arrepentimiento{
+    font-family: 'Magra', sans-serif;
+    align-self: flex-end;
+    position: relative;
+    top: 4vw;
+    left: 2vw;
+    width: 5vw;
+}
+
+.arrepentimiento{
+    font-family: 'Magra', sans-serif;
+    padding: 5px;
+    background-color: #b4dced;
+    border: solid 2px #48C9B0;
+}
+
+.qr{
+    font-size: 10vw;
+    color: black;
+    padding: 6px;
+    background-color: white;
+    position: relative;
+    left: 30vw;
+    bottom: -2vw;
+}
+
+.usuario-administrador{
+    font-family: 'Magra', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 17vw;
+    right: 59.5vw;
+}
+
+/*tablet*/
+
+@media(min-width: 481px) {
+    /* HEADER */
+
+    .mensaje-bienvenida{
+        font-size: 20px;
+
+    }
+
+    .logo{
+        width: 21%;
+    }
+
+    .busqueda{
+        width: 55vw;
+        margin-top: 30px;
+        position: absolute;
+        left: 30vw;
+        top: 30px;
+    }
+    
+    .barra{
+        font-size: 12px;
+    }
+
+    .lupa{
+        font-size: 15px;
+        top: 6px;
+    }
+
+    .menu-header{
+        top: 50px;
+        left: 67%;
+        font-size: 17px;
+        width:20vw;
+    }
+
+    .iconos-menu1{
+        display: block;
+        width: 5vw;
+    }
+
+    .iconos-menu {
+        width: 5vw;
+        margin: 5px;
+    }
+
+    .lista-clasificaciones{
+        display: flex;
+        font-size: 13px;
+        justify-content: space-around;
+        width: 60vw;
+        position: absolute;
+        left: 29vw;
+        top: 24vw;
+    }
+
+    .select-header{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 12px;
+        border-radius: 0;
+        background-color: #D5F5E3;
+        border: none;
+        width: 11vw;
+        list-style: none;
+        padding: 0px;
+        height: 3vh;
+    }
+
+    .lista-clasificaciones a{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 11px;
+        text-decoration: none;
+        padding-top: 4px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .talles-envios-cuotas{
+        display: flex;
+        text-align: center;
+    }
+   
+    /* MAIN */
+
+    .slider{
+        max-height: 90vh;
+    }
+    
+    .cuatro-destacados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cuatro-ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
+    .producto{
+        width: 40%;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-top: 5vw;
+        margin-right: 4vw;
+        padding: 0%;
+    }
+
+    .icono-carro{
+        display: block;
+        padding: 0px 0 11px 0;
+        width: 10vw;
+    }
+
+    .individual-producto{
+        padding: 0%;
+    }
+
+    .imag{
+        align-items: center;
+        padding: 0%;
+        width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;    
+    }
+
+    .talle{
+        padding: 20px 20px 10px 18px;
+
+    }
+
+    .publicidad1{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .publicidad{
+        width: 48vw;
+        margin: 5px;
+    }
+    
+    select{
+        border: solid 2px #48C9B0;
+        padding: 1vw;
+        font-family: 'Magra', sans-serif;
+        border-radius: 18vw;
+        color: #48C9B0;
+        width: 12vw;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+
+    .cantidad{
+        padding: 0px 0 3px 0;
+    }
+
+    /* FOOTER */
+    .boton-news{
+        font-size: 3vw;
+    }
+
+    .casilla-mail{
+        width: 50vw;
+
+    }
+
+    .logo-footer{
+        margin-top: 1vw;
+    }
+
+    .descripcion-marca{
+        font-size: 14px;
+    }
+
+    h5{
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    .iconos-footer{
+        top: -14vw;
+        width: 30vw;
+    }
+
+    .icono{
+        width: 7vw;
+    }
+
+    .caja4{
+        top: -15vw;
+        left: 14vw;
+        height: 10vw;
+        width: 45vw;
+        margin-left: 10vw;
+    }
+
+    .boton-arrepentimiento{
+        top: 3vw;
+        left: -1vw;
+    }
+
+    .arrepentimiento{
+        font-size: 15px;
+    }
+
+    .qr{
+        font-size: 7vw;
+        color: black;
+        padding: 6px;
+        background-color: white;
+        position: relative;
+        left: 26vw;
+        top: -3vw
+    }
+
+    .usuario-administrador{
+        top: 12vw;
+
+    }
+
+}
+
+/*desktop*/
+
+@media(min-width: 769px){
+    /*HEADER*/
+
+    .logo{
+        width: 21%;
+        align-self: stretch;
+        margin-left: 2vw;
+        position: absolute;
+        top: 40px;
+    }
+    
+    .contenedor-logo-busqueda{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .principal-header{
+        background-color: #D5F5E3 ;
+        height: 20vw;
+        padding: 8px;
+    }
+    
+    .busqueda{
+        width: 25%;
+        margin-top: 5vw;
+        position: absolute;
+        left: 30vw;
+    }
+    
+    .barra{
+        font-family: 'Magra', sans-serif;
+        width: 120%;
+        padding: 7px 5px 7px 35px;
+        border: solid 1px #48C9B0;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    
+    .lupa{
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        color: #48C9B0;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+
+    .iconos-menu2{
+        width: 25px;
+        margin: 5px;
+        color: #117864;
+        font-size: 23px;
+    }
+
+    .menu-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 26%;
+        position: absolute;
+        top: 7vw;
+        left: 66vw;
+    }
+ 
+    .iconos-menu{
+        width: 38px;
+        margin: 5px;
+    }
+
+    .iconos-menu1 {
+        display: block;
+        width: 5vw;
+    }
+
+    .lista-clasificaciones{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-bottom: 0px;
+        width: 61%;
+        padding: 0 10px 0 0;
+        position: absolute;
+        left: 31vw;
+        top: 22vw;
+    }
+
+    .select-header{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 15px;
+        border-radius: 0;
+        background-color: #D5F5E3;
+        border: none;
+        width: 9vw;
+        list-style: none;
+        padding: 0px;
+        height: 3vh;
+    }
+
+    .lista-clasificaciones a{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 15px;
+        text-decoration: none;
+        padding-top: 1px;
+    }
+
+    /* MAIN */
+
+    .talles-envios-cuotas{
+        text-align: center;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .caja-datos{
+        width: 32vw;
+    }
+
+    .cuatro-destacados{
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .producto{
+        flex-wrap: wrap;
+        display: flex;
+        width: 22vw;
+        justify-content: center;
+        margin: 0 0 15px 0;
+        border: solid 4px #48C9B0;
+        height: auto;
+    }   
+
+    .imag{
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .talle{
+        padding: 14px 15px 10px 15px;
+    }
+
+    .icono-carro{
+        width: 5vw;
+        padding: 0px
+    }
+
+
+    .carro-cantidad{
+        width: 15vw;
+    }
+
+    .cantidad{
+        padding: 6px 0 3px 0;
+    }
+
+    select{
+        font-family: 'Magra', sans-serif;
+        color: #48C9B0;
+        border-radius: 1vw;
+        padding: 0%;
+        background-color: antiquewhite;
+        width: 6.8vw;
+    }
+
+    .individual-producto{
+        width: 100%;
+    }
+        
+    .publicidad1{
+        display: flex;
+        max-width: 100%;
+        max-height: 0%;
+    }
+
+    .cuatro-ofertas{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .niños-corriendo{
+        width: 98vw;
+        margin: auto;
+        margin-left: 7px;
+    }
+
+    /*FOOTER*/
+    .newsletter{
+        font-size: 20px;
+        height: 18vh;
+    }
+
+    .texto-newsletter{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .casilla-mail {
+        width: 55vw;
+        height: 6vh;
+        padding: 10px;
+        font-size: 18px;
+
+    }
+    .boton-news {
+        font-size: 3.5vw;
+    }
+
+    .caja1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descripcion-marca{
+        width: 75vw;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .logo-footer{
+        width: 20vw;
+    }
+
+    .caja2{
+        position: relative;
+        left: -33vw;
+        top: 6vw;
+    }
+
+    .caja2 ul{
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding-left: 11px;
+    }
+
+    .caja2 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+    }
+
+    .caja2 li{
+        padding: 5px;
+    }
+    
+    h5{
+        position: static;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .caja3 ul{
+        display: block;
+    }
+
+    .caja3 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+    }
+
+    .caja3 ul{
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding-left: 11px;
+    }
+
+    .caja3 li{
+        padding: 5px;
+    }
+
+    .caja3{
+        position: relative;
+        top: -31vw;
+        left: 2vw;
+    }
+
+    .iconos-footer{
+        width: 36vw;
+        position: relative;
+        top: -27vw;
+        left: 3vw;
+        border-top: solid 3px #48C9B0;
+        padding-top: 10px;
+    }
+
+    .icono {
+        width: 8vw;
+    }
+
+    .facebook{
+        color: blue;
+        padding: 1vw 2vw 1vw 2vw;
+        font-size: 6vw;
+    }
+
+    .instagram, .ubicacion{
+        padding: 1vw 2vw 1vw 2vw;
+        font-size: 6vw;
+    }
+
+    .caja4{
+        top: -67vw;
+        left: 32vw;
+        height: 10vw;
+        width: 35vw;
+        display: block;
+    }
+
+    .boton-arrepentimiento{
+        width: 8vw;
+        left: 5vw;  
+    }
+    
+    .arrepentimiento {
+        font-size: 20px;
+        padding: 7px;
+        border: solid 4px #48C9B0;  
+    }
+
+    .qr{
+        font-size: 11vw;
+        position: relative;
+        top: 5vw;
+        left: 5vw;
+    }
+
+    .usuario-administrador{
+        top: 12vw;
+        right: 9.5vw;
+    }
+}
+
+@media(min-width: 1100px){
+
+    /*HEADER*/
+
+    .bienvenida{
+        width: 100%;
+        background-color: #48C9B0;
+        display: block;
+        height: 7vh;
+    }
+
+    .principal-header{
+        height: 25vh;
+    }
+
+    .logo{
+        width: 12%;
+        align-self: stretch;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+    .barra{
+        font-family: 'Magra', sans-serif;
+        padding: 11px 0px 11px 35px;
+        border: solid 1px #48C9B0;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .busqueda{
+        position: absolute;
+        left: 30vw;
+        top: -0.5vw;
+    }
+
+    .lupa{
+        font-size: 19px;
+        top: 12px;
+    }
+
+    .menu-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 22%;
+        position: absolute;
+        top: 4vw;
+        left: 73vw;
+    }
+
+    .iconos-menu {
+        width: 3vw;
+        margin: 5px;
+    }
+
+    .iconos-menu2{
+        font-size: 2vw;
+    }
+
+    .iconos-menu1{
+        width: 3vw
+    }
+
+    .lista-clasificaciones {
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-bottom: 0px;
+        width: 64%;
+        padding: 0 10px 0 0;
+        position: absolute;
+        left: 31vw;
+        top: 13vw;
+    }
+
+    .select-header{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 18px;
+        border-radius: 0;
+        background-color: #D5F5E3;
+        border: none;
+        width: 5vw;
+        list-style: none;
+        padding: 0px;
+        height: 3vh;
+    }
+
+    .lista-clasificaciones a{
+        font-family: 'Magra', sans-serif;
+        color: #EB984E;
+        font-size: 18px;
+        text-decoration: none;
+        padding-top: 1px;
+    }
+
+    /*MAIN*/
+
+    .slider{
+        height: 45vh;
+    }
+
+    .slider-info{
+        background-color: white;
+    }
+
+    .talles-envios-cuotas{
+        background-color: white;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .caja-datos{
+        padding-top: 10px;
+        border: solid 2px #48C9B0;
+        margin-top: 15px;
+        width: 22vw;
+        height: 10vh;
+        margin-left: 100px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+    h2{
+        font-family: 'Magra', sans-serif;
+        color: #FAD7A0;
+        text-align: center;
+        background-color: #48C9B0;
+        height: 7vh;
+        padding: 10px;
+    }
+
+    .cuatro-destacados, .cuatro-ofertas{
+        width: 100w;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    .producto{
+        flex-wrap: wrap;
+        display: flex;
+        width: 22vw;
+        height: display;
+        margin: 15px 0 0 0;
+    }
+
+    .imag{
+        width: 18vw;
+        margin-bottom: 5px;
+    }
+
+    .description{
+        font-family: 'Magra', sans-serif;
+        font-size: 16px;
+        padding: 5px 5px 5px 10px;
+        margin-top: 10px;
+    }
+
+    .price{
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+        padding: 5px 5px 5px 10px;
+        margin-top: 5px;
+    }
+
+    .price-final{
+        font-size: 26px;
+        margin-left: 2vw;
+        color: #48C9B0;
+        border-radius: 5px;
+        padding: 5px;
+
+    }
+
+    .carro-cantidad{
+        margin-right: 0;
+        width: 10vw;
+        justify-content: space-between;
+    }
+
+    .talle-cantidad{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .talle{
+        font-family: 'Magra', sans-serif;
+        font-size: 16px;
+        padding: 28px 10px 10px 30px;
+    }
+
+    .cantidad{
+        align-self: center;
+        padding: 6px 0 3px 0;
+    }
+
+    select{
+        font-family: 'Magra', sans-serif;
+        text-align: center;
+        color: #48C9B0;
+        border-radius: 1vw;
+        background-color: antiquewhite;
+        width: 5.5vw;
+        padding: 2px 2px 2px 2px;
+    }
+    
+    .icono-carro{
+        width: 4vw;
+        padding-bottom: 3px;
+        margin-bottom: 15px;
+    }
+
+    .producto{
+        border: none;
+        border: solid 4px #48C9B0;
+        transition: all 450ms;
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 15px #48C9B0;
+    }
+
+    .individual-producto{
+        border-top: solid 1px #48C9B0;
+    }
+    
+    .publicidad1{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    .publicidad {
+        width: 47vw;
+    }
+
+    .niños-corriendo{
+        width: 97vw;
+        height: 62vh;
+        position: relative;
+        left: 2vh;
+    }
+
+    
+    /*FOOTER*/
+
+    .footer{
+        height: auto;
+    }
+
+    .newsletter{
+        font-size: 15px;
+        height: 7vw;
+        width: 85vw;
+        position: relative;
+        left: 8vw;
+    }
+
+    .texto-newsletter{
+        padding: 5px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .casilla-mail {
+        width: 30vw;
+        height: 5.5vh;
+        padding: 10px;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .boton-news {
+        font-size: 2vw;
+        left: -3vw;
+        top: 0.3vw;
+    }
+
+    .caja1{
+        display: flex;
+        position: relative;
+        left: 2vw;
+        bottom: -1vw;
+        flex-direction: row;
+    }
+
+
+    .logo-footer{
+        margin: 0;
+        width: 8vw;
+        position: static;
+    }
+
+    .descripcion-marca{
+        width: 40vw;
+        font-size: 14px;
+        margin-left: 40px;
+        left: 0vw;
+    }
+
+    .caja2{
+        justify-content: left;
+        top: 1.5vw;
+        left: -18vw;
+    }
+
+    .caja2 ul{
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .caja2 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Magra', sans-serif;
+        font-size: 13px;
+    }
+
+    h5{
+        text-decoration: underline;
+        position: static;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .caja3 ul{
+        display: block;
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .caja3 a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Magra', sans-serif;
+        font-size: 13px;
+    }
+
+    .caja3{
+        justify-content: left;
+        top: -15.5vw;
+        left: 0vw;
+        height: 0;
+    }
+
+    .iconos-footer{
+        width: 15vw;
+        position: relative;
+        top: -2vw;
+        left: 0vw;
+        border-top: solid 3px #48C9B0;
+        padding-top: 10px;
+    }
+
+    .icono {
+        width: 3vw;
+    }
+
+    .instagram, .ubicacion, .facebook{
+        padding: 10px 0 0 0 ;
+        font-size: 2vw;
+    }
+
+    .caja4{
+        top: -21.5vw;
+        left: 13vw;
+        height: 0;
+        width: 18vw;
+        display: block;
+    }
+    
+    .boton-arrepentimiento{
+        width: 15vw;
+        left: -1vw;
+    }
+    
+    .arrepentimiento {
+        font-size: 15px;
+        padding: 7px;
+        border: solid 4px #48C9B0;  
+    }
+    
+    .qr{
+        font-size: 5vw;
+        position: relative;
+        top: 4vw;
+        left: 2vw;
+    }
+
+    .usuario-administrador{
+        font-family: 'Magra', sans-serif;
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        top: 8vw;
+        right: 5.5vw;
+        border-bottom: solid 2px #48C9B0;
+        width: 7vw;
+    }
+
+}

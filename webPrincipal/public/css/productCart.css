@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.muestra-carrito{
+    display:block;
+    width: 100%;
+    background-color: #D1F2EB;
+    float: left;    
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+h3{
+    font-family: 'Magra', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.icono-salida {
+    font-size: 25px;
+    align-items: flex-end;
+    color: black;
+}
+
+.muestra-producto{
+    width: 95%;
+    justify-content: center;
+    padding: 5px;
+    border: solid 2px #48C9B0;
+    margin: 0 0 10px 12px;
+}
+
+.nombre-icono{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nombre{
+    font-family: 'Magra', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.foto-muestra{
+    width: 30%;
+    padding: 5px;
+}
+
+.cantidad{
+    text-align: center;
+    width: 100%;
+    font-family: 'Magra', sans-serif;
+    font-size: 18px;
+    border: solid 2px #48C9B0;
+    border-radius: 5px;
+}
+
+.precio1, .precio2{
+    text-align: center;
+    width: 100%;
+    font-family: 'Magra', sans-serif;
+    font-size: 18px;
+    border: solid 2px #48C9B0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.icono-eliminar {
+    color: black;
+    font-size: 15px;
+    width: 5%;
+    text-align: center;
+    padding: 5px;
+}
+
+.datos {
+    width: 30%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.imagen-datos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+h4{
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+h5{
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.opciones{
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.opcion-envio{
+    width: 50%;
+    padding: 5px;
+    font-family: 'Magra', sans-serif;
+    border: solid 2px #48C9B0;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.barra-codigo{
+    height: 25%;
+    margin: 6px 5px 10px 2px;
+    width: 47%;
+}
+
+.boton-codigo{
+    font-family: 'Magra', sans-serif;
+    font-size: 14px;
+    position: relative;
+    left: 0px;
+    background-color: white;
+    border: solid 3px #48C9B0;
+}
+
+.sin-codigo{
+    font-family: 'Magra', sans-serif;
+    font-size: 15px;
+}
+
+
+.finaliza-compra{
+    width: 60%;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+.iniciar-compra{
+    font-family: 'Magra', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #48C9B0;
+    border: solid 2px #48C9B0;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media(min-width:451px){
+    h3{
+        font-size: 25px;
+    }
+
+    .icono-salida{
+        font-size: 30px;
+    }
+
+    .datos{
+        margin-top: 45px;
+
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    .opcion-envio{
+        font-size: 16px;
+    }
+}
+
+@media(min-width:770px){
+    .muestra-carrito{
+        display:block;
+        width: 50%;
+        background-color: #D1F2EB;
+        float: left;
+        margin-left: 50%;
+    }
+
+    .datos {
+        margin-top: 20px;
+    }
+
+    .icono-eliminar{
+        font-size: 18px;
+        width: 8%;
+    }
+
+    .opcion-envio {
+        font-size: 14px;
+    }
+
+    .barra-codigo{
+        width: 54%;
+    }
+}
+
+
+@media(min-width: 1100px){
+    .muestra-carrito{
+        display:block;
+        width: 50%;
+        background-color: #D1F2EB;
+        float: left;
+        margin-left: 50%;
+    }
+    
+    .titulo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    h3{
+        font-family: 'Magra', sans-serif;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    
+    .icono-salida {
+        font-size: 40px;
+        align-items: flex-end;
+        color: black;
+    }
+    
+    .muestra-producto{
+        width: 95%;
+        justify-content: center;
+        padding: 5px;
+        border: solid 2px #48C9B0;
+        margin: 0 0 10px 12px;
+    }
+    
+    .nombre-icono{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .nombre{
+        font-family: 'Magra', sans-serif;
+        font-size: 20px;
+        margin: 5px;
+    }
+    
+    .foto-muestra{
+        width: 30%;
+        padding: 5px;
+    }
+    
+    .cantidad{
+        text-align: center;
+        width: 100%;
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+        border: solid 2px #48C9B0;
+        border-radius: 5px;
+    }
+    
+    .precio1, .precio2{
+        text-align: center;
+        width: 100%;
+        font-family: 'Magra', sans-serif;
+        font-size: 18px;
+        border: solid 2px #48C9B0;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .icono-eliminar {
+        color: black;
+        font-size: 15px;
+        width: 5%;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .datos {
+        width: 30%;
+        justify-content: center;
+        margin-top: 65px;
+        margin-right: 120px;
+    }
+    
+    .imagen-datos{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    h4{
+        font-family: 'Magra', sans-serif;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    
+    h5{
+        font-family: 'Magra', sans-serif;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    
+    .opciones{
+        display: flex;
+        width: 100%;
+        padding: 10px 15px;
+    }
+    
+    .opcion-envio{
+        width: 50%;
+        padding: 5px;
+        font-family: 'Magra', sans-serif;
+        border: solid 2px #48C9B0;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    
+    .barra-codigo{
+        height: 39%;
+        margin: 2px 5px 2px 2px;
+        width: 75%;
+    }
+    
+    .boton-codigo{
+        font-family: 'Magra', sans-serif;
+        font-size: 14px;
+        position: relative;
+        left: -80px;
+        background-color: white;
+        border: solid 3px #48C9B0;
+        margin-top: 5.5px;
+    }
+    
+    .sin-codigo{
+        font-family: 'Magra', sans-serif;
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    
+    
+    .finaliza-compra{
+        width: 60%;
+        padding: 10px;
+        margin-left: 20%;
+    }
+    
+    .iniciar-compra{
+        font-family: 'Magra', sans-serif;
+        font-size: 20px;
+        color: white;
+        background-color: #48C9B0;
+        border: solid 2px #48C9B0;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+}

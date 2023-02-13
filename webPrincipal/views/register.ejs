@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+
+<body>
+
+    <%- include('./partials/header.ejs')%>
+    <main>
+        <div class="cuenta">
+            <h1>CREA TU CUENTA</h1>
+        </div>
+        <div class="errores">
+            <ul> 
+               
+            </ul>
+        </div>
+        <br>
+        <section class="contenedor-a">
+            <form class="formulario" method="POST" action="/register/" enctype="multipart/form-data">
+                <div class="contenedor">
+                    <div class="nombre-apellido">
+                        Nombre y apellido (*)
+                        <br>
+                        <input id="nombreapellido" type="text" name="nombreyapellido" value="<%= locals.oldData ? oldData.nombreyapellido : null %>" class="<%= locals.errors && errors.email ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.nombreyapellido){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.nombreyapellido.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="nombre-usuario">
+                        ¿Como te gustaria que te llamemos?
+                        <br>
+                        <input type="text" name="nombreusuario" value="<%= locals.oldData ? oldData.nombreusuario : null %>">
+                    </div>
+                    <br>
+                    <div class="imagen">
+                        Foto de Perfil
+                        <input id="imagen" type="file" name="imagen" multiple class="foto-producto" value="<%= locals.oldData ? oldData.imagen : null %>">
+                        <% if (locals.errors &&  errors.imagen){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.imagen.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="email">
+                        Email (*)
+                        <br>
+                        <input id="email" type="email" name="email" value="<%= locals.oldData ? oldData.email : null %>" class="<%= locals.errors && errors.email ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.email){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.email.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="telefono">
+                        Telefono (*)
+                        <br>
+                        <input id="telefono" type="telefono" name="telefono" value="<%= locals.oldData ? oldData.telefono : null %>" class="<%= locals.errors && errors.telefono ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.telefono){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.telefono.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="provincia">
+                        Provincia (*)
+                        <br>
+                        <div class="zonas">
+                            <input id="provincia" name="provincia" class="<%= locals.errors && errors.provincia ? "is-invalid" : null %>">
+                            <% if (locals.errors &&  errors.provincia){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.provincia.msg %> </p>
+                           
+                            <% } %>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="localidad">
+                        Localidad (*)
+                        <br>
+                        <div class="localidad">
+                            <input id="localidad" name="localidad" class="<%= locals.errors && errors.localidad ? "is-invalid" : null %>">
+                            <% if (locals.errors &&  errors.localidad){ %>
+                            
+                                <p style="color: #DC7633 ;"> <%= errors.localidad.msg %> </p>
+                               
+                            <% } %>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="direccion">
+                        Direccion (*)
+                        <br>
+                        <div style="display: flex;">
+                            <input id="direccion" type="text" name="calle" placeholder="Calle" style="width: 65vw; font-family: 'Magra', sans-serif;" class="<%= locals.errors && errors.localidad ? "is-invalid" : null %>"> <input type="text" name="numero" placeholder="Número" style="width: 12vw; margin-left: 3vw;font-family: 'Magra', sans-serif;" class="<%= locals.errors && errors.localidad ? "is-invalid" : null %>">
+                        </div>
+                        <% if (locals.errors &&  errors.calle){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.calle.msg %> </p>
+                           
+                        <% } %>
+                        <% if (locals.errors &&  errors.numero){ %>
+                        
+                            <p style="color: #DC7633 ;"> <%= errors.numero.msg %> </p>
+                           
+                        <% } %>
+                        <input type="piso-departamento" name="departamento" placeholder="Piso y Departamento" style="font-family: 'Magra', sans-serif;">
+                    </div>
+                    <br>
+                    <div class="password">
+                        <div class="contraseña1">
+                            Contraseña (*)
+                            <br>
+                            <input id="password" type="password" name="password" class="<%= locals.errors && errors.password ? "is-invalid" : null %>">
+                            <% if (locals.errors &&  errors.password){ %>
+                            
+                                <p style="color: #DC7633 ;"> <%= errors.password.msg %> </p>
+                               
+                            <% } %>
+                        </div>
+                        <br>
+                        <label for="confirma-contraseña"></label>
+                        Confirmar contraseña (*)
+                        <br>
+                        <input type="password" id="confirmar-password" name="passwordcheck" class="<%= locals.errors && errors.passwordcheck ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.passwordcheck){ %>
+                            
+                            <p style="color: #DC7633 ;"> <%= errors.passwordcheck.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <section>
+                        <div class="contenedor-b">
+                            <label for="boton-enviar"></label>                
+                            <button type="submit" class="boton-formulario">CONFIRMA TU CUENTA</button>
+                            <br>
+                            <p class="mensaje-boton">Si ya tenes tu cuenta, <a href="/login" class="text">INGRESA! </a></p>
+                        </div>
+                        <br>
+                    </section>
+                </div>
+            </form>
+        </section>
+        <br>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+    <!-- <script src="/js/registerValidation.js"></script>       -->
+</body>
+    
+
+</html>

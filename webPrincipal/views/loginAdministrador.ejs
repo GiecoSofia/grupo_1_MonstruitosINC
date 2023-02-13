@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/css/loginAdministrador.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <main>
+        <div class="caja-completa">
+            <div class="titulo">
+                <a href="/"><img src="/images/logosinfondo.png" class="logo"></a>
+                <h1> Inicia Sesion </h1>
+            </div>
+            <div class="errores">
+                <ul> 
+                   
+                </ul>
+            </div>
+            <form id="Registro-Usuario" method="POST" action="/loginAdministrador">
+                <div class="login-completo">
+                    <div class="email">
+                        Email
+                        <br>
+                        <input type="email" id="email" name="emailadm">
+                        <% if (locals.errors &&  errors.emailadm){ %>
+                            
+                            <p style="color: #2980B9 ;"> <%= errors.emailadm.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="contraseña-se">
+                        Contraseña
+                        <br>
+                        <input type="password" id="password" name="passwordadm">
+                        <% if (locals.errors &&  errors.passwordadm){ %>
+                            
+                            <p style="color: #2980B9 ;"> <%= errors.passwordadm.msg %> </p>
+                           
+                        <% } %>
+                    </div>  
+                    <div style="display: flex; margin-left: 13.5vw; margin-top: 10px;">
+                        <input type="checkbox" name="rememberadm" style="width: 0.8vw;"><p style="margin-left: 10px; margin-bottom: 10px;">Recordar Usuario</p>
+                    </div>
+                    <label for="boton-sesion"></label>
+                    <a href="/">
+                        <button type="submit" class="boton-formulario">INICIA SESION</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/js/loginAdmValidation.js"></script>
+</body>
+</html>

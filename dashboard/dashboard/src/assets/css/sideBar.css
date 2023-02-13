@@ -1,0 +1,57 @@
+.logo{
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+.bg{
+    background-color: #A3E4D7;
+}
+
+.links{
+    color: #EB984E;
+    font-family: "Nunito";
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.links:hover{
+    color: #EDBB99
+}
+
+.icon{
+    font-size: 1rem;
+    padding: 2.5px;
+    color: #EB984E;
+}
+
+.icon:hover {
+    color: #EDBB99
+}
+
+.text-align-left{
+    justify-content: left;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.user{
+    padding: 0.4rem;
+    color: black;
+}
+
+.color-orange{
+    color: #DC7633;
+}
+
+.icon-navar{
+    margin: 0.5rem 1rem;
+}

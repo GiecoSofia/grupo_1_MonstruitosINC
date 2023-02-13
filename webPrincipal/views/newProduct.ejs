@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/newProduct.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs')%>
+        <main class="main">
+            <h2>CARGAR PRODUCTO</h2>
+            <div class="errores">
+                <ul> 
+                   
+                </ul>
+            </div>
+            <div class="formulario-completo">
+                <form action="/newProduct/" method="POST" class="nuevo-producto" enctype="multipart/form-data">
+                    <div class="control-form">
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre del Producto" value="<%= locals.oldData ? oldData.nombre : null %>" class="item-form <%= locals.errors && errors.nombre ? "is-invalid" : null %>" autofocus>
+                        <% if (locals.errors &&  errors.nombre){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.nombre.msg %> </p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <select name="categoria" class="selector-categoria" id="categoria">
+                            <option value= "0" disabled selected>Categoria Principal</option>
+                            <option value="1">BEBES</option>
+                            <option value="2">NENES</option>
+                            <option value="3">NENAS</option>
+                            <option value="4">OFERTAS</option>
+                        </select>
+                        <% if (locals.errors &&  errors.categoria){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.categoria.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <select name="subcategoria" class="selector-categoria" id="subcategoria">
+                            <option value= "0" disabled selected>Categoria Secundaria</option>
+                            <option value="1">Remeras</option>
+                            <option value="2">Camisas y Blusas</option>
+                            <option value="3">Buzos y Sweaters</option>
+                            <option value="4">Camperas</option>
+                            <option value="5">Pantalones y Leggins</option>
+                            <option value="6">No tiene</option>
+                        </select>
+                        <% if (locals.errors &&  errors.subcategoria){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.subcategoria.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <label class="foto">Foto de Producto</label>
+                        <input type="file" name="foto" multiple class="foto-producto" id="foto">
+                        <% if (locals.errors &&  errors.foto){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.foto.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="number" id="precio" name="precio" placeholder="Precio" value="<%= locals.oldData ? oldData.precio : null %>" class="item-form <%= locals.errors && errors.precio ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.precio){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.precio.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <select name="seccion" class="selector-categoria" id="seccion">
+                            <option value= "0" disabled selected>Seccion</option>
+                            <option value="1">Productos Destacados</option>
+                            <option value="2">Ofertas</option>
+                            <option value="3">No tiene</option>
+                        </select>
+                        <% if (locals.errors &&  errors.seccion){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.seccion.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="number" name="descuento" placeholder="Porcentaje de Descuento" class="item-form">
+                        <% if (locals.errors &&  errors.descuento){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.descuento.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="text" name="talles" id="talles" placeholder="Talles disponibles de la prenda" value="<%= locals.oldData ? oldData.talles : null %>" class="item-form <%= locals.errors && errors.talles ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.talles){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.talles.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="text" name="colores" id="colores" placeholder="Colores disponibles de la prenda" value="<%= locals.oldData ? oldData.colores : null %>" class="item-form <%= locals.errors && errors.colores ? "is-invalid" : null %>">
+                        <% if (locals.errors &&  errors.colores){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.colores.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-form">
+                        <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion de la prenda" class="item-form">
+                        <% if (locals.errors &&  errors.descripcion){ %>
+                            
+                            <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.descripcion.msg %></p>
+                           
+                        <% } %>
+                    </div>
+                    <div class="control-envio">
+                        <label class="datos-envio">Medidas para Envío</label>
+                        <div class="datos">
+                            <div class="info-envio">
+                                <input id="ancho" type="number" name="ancho" placeholder="Ancho (cm)" class="item-envio" value="<%= locals.oldData ? oldData.ancho : null %>">
+                                <% if (locals.errors &&  errors.ancho){ %>
+                            
+                                    <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.ancho.msg %></p>
+                                   
+                                <% } %>
+                            </div>
+                            <div class="info-envio">
+                                <input type="number" id="largo" name="largo" placeholder="Largo (cm)" class="item-envio" value="<%= locals.oldData ? oldData.largo : null %>">
+                                <% if (locals.errors &&  errors.largo){ %>
+                            
+                                    <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.largo.msg %></p>
+                                   
+                                <% } %>
+                            </div>
+                            <div class="info-envio">
+                                <input type="number" id="alto" name="alto" placeholder="Alto (cm)" class="item-envio" value="<%= locals.oldData ? oldData.alto : null %>">
+                                <% if (locals.errors &&  errors.alto){ %>
+                            
+                                    <p style="color: #1A5276 ; font-family: Magra;"> <%= errors.alto.msg %></p>
+                                   
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="boton-formulario">Cargar Producto</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <%- include('./partials/footer.ejs')%>
+        <script src="/js/newProductValidation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/css/productDetail.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/products.css" rel="stylesheet" >
+    <%- include('./partials/head.ejs')%>
+</head>
+
+<body>
+
+    <%- include('./partials/header.ejs')%>
+        <main class="main">
+            <% if (locals.isLoggedAdm) { %>
+            <div class="administrador">
+                <div class="link-administrador">
+                    <a href="/editProduct/<%= producto.id %>">Editar Producto</a>
+                </div>
+                <div class="link-administrador">
+                    <form action="/productDetail/<%= producto.id %>/?_method=DELETE" method="POST">
+                        <button type="submit" class="button-delete">Eliminar Producto</button>
+                    </form>
+                </div>
+            </div>
+            <% } %>
+            <br>
+            <p class="ruta"> <%= producto.categoria_id %> </p>
+            <div class="muestra-producto">
+                <img src="/images/products/<%= producto.imagen %> " class="imagen-producto">
+
+                <div class="detalle-producto">
+                    <h4>
+                        <%= producto.nombre %>
+                    </h4>
+                    <br>
+                    <div class="precios">
+                        <p class="precio"> $<%= producto.precio %></p>
+                        <% if (producto.descuento) { %>
+                        <div class="caja-descuento">
+                            <p class="descuento">
+                                <%= producto.descuento %>%
+                            </p>
+                            <p class="precio-descuento">
+                                <%  
+                                let precioFinal = producto.precio - ((producto.precio * producto.descuento)/ 100);
+                                %> 
+                                <p class="final-price">$<%=precioFinal%> </p>
+                            </p>
+                        </div>
+                        <% } %>
+                    </div>
+                    <br>
+                    <div class="selector-opciones">
+                        <p class="talles">
+                            <select class="eleccion-talle" name="tallesselector">
+                                <option disabled selected>Talle</option> 
+                                <option><%= producto.talle%></option>
+                            </select>
+                        </p>
+                        <p class="color">
+                            <select class="eleccion-color" name="colorselector">
+                                <option disabled selected>Color</option> 
+                                <option><%= producto.color%></option>
+                            </select>
+                        </p>
+                    </div>
+                    <br>
+                    <p class="tabla-talles"><a href="#">Tabla de Talles <i class="fas fa-table" style="color: black;"></i></a></p>            
+                    <br>
+                    <div class="button-texto">
+                        <!-- <p class="texto-compra">- 1 -</p> -->
+                        <div class="button">
+                            <button type="submit" class="button-compra">Agregar<img
+                                src="/../images/carritomonstruitos.png" class="icono-button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo-descripcion">
+                <h6>Descripcion y Recomendaciones:</h6>
+                <br>
+                <p class="descripcion-prenda">
+                    <%= producto.descripcion %>
+                </p>
+            </div>
+
+            <h3>También te puede interesar:</h3>
+
+            <div class="seccion-relacionados">
+                <article class="caja-producto">
+                    <img src="/images/products/foto10.jpeg" class="image-productos">
+                    <article class="datos-producto">
+                        <p class="descripcion">Remera M. Largas con Estampa</p>
+                        <p class="precio-caja">$1900</p>
+                        <div class="cantidad-carrito">
+                            <p class="cantidad-producto">- 1 + </p>
+                            <a href="#"><img src="/../images/carritomonstruitos.png" class="icono-carrito"></a>
+                        </div>
+                    </article>
+                </article>
+
+                <article class="caja-producto">
+                    <img src="/images/products/foto13.jpg" class="image-productos">
+                    <article class="datos-producto">
+                        <p class="descripcion">Pantalon de Jogging c/ Frisa</p>
+                        <p class="precio-caja">$3500</p>
+                        <div class="cantidad-carrito">
+                            <p class="cantidad-producto">- 1 + </p>
+                            <a href="#"><img src="/../images/carritomonstruitos.png" class="icono-carrito"></a>
+                        </div>
+                    </article>
+                </article>
+
+                <article class="caja-producto">
+                    <img src="/images/products/foto32.jpg" class="image-productos">
+                    <article class="datos-producto">
+                        <p class="descripcion">Campera Frisa Yeah</p>
+                        <p class="precio-caja">$5300</p>
+                        <div class="cantidad-carrito">
+                            <p class="cantidad-producto">- 1 + </p>
+                            <a href="#"><img src="/../images/carritomonstruitos.png" class="icono-carrito"></a>
+                        </div>
+                    </article>
+                </article>
+
+                <article class="caja-producto">
+                    <img src="/images/products/foto11.jpeg" class="image-productos">
+                    <article class="datos-producto">
+                        <p class="descripcion">Jean Chupin</p>
+                        <p class="precio-caja">$4800</p>
+                        <div class="cantidad-carrito">
+                            <p class="cantidad-producto">- 1 + </p>
+                            <a href="#"><img src="/../images/carritomonstruitos.png" class="icono-carrito"></a>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </main>
+
+        <%- include('./partials/footer.ejs')%>
+
+</body>
+
+</html>

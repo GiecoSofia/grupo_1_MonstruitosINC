@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/css/productCart.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+<body>
+    <main>
+        <div class="muestra-carrito">
+            <div class="titulo">
+                <h3>Tu Carrito</h3>
+                <a href="#" class="icono-salida"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+
+            <article class="muestra-producto">
+                <div class="nombre-icono">
+                    <p class="nombre">Buzo Corto Piel c/ Lurex</p>
+                    <a href="#" class="icono-eliminar"><i class="fas fa-trash"></i></a>
+                </div> 
+                <div class="imagen-datos">
+                    <img src="/images/products/foto14.jpg" class="foto-muestra">
+                    <div class="datos">
+                        <p class="cantidad">- 1 +</p>
+                        <p class="precio1">$6600</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="muestra-producto">
+                <div class="nombre-icono">
+                    <p class="nombre">Remera Nena con Estampa</p>
+                    <a href="#" class="icono-eliminar"><i class="fas fa-trash"></i></a>
+                </div>
+                <div class="imagen-datos">
+                    <img src="/images/products/foto15.jpg" class="foto-muestra">
+                    <div class="datos">
+                        <p class="cantidad">- 1 +</p>
+                        <p class="precio2">$2150</p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="subtotal">
+                <h4>SUBTOTAL</h4>
+            </div>
+
+            <div class="caja-envio">
+                <h5>ENVIO</h5>
+                <div class="opciones">
+                    <div class="opcion-envio">
+                        <input type="radio" name="envio-domicilio">
+                        <label class="domicilio">A domicilio
+                            <br>
+                            <input type="text" name="codigo-postal" placeholder="Codigo postal" class="barra-codigo"><button type="submit" class="boton-codigo">CALCULAR</button>
+                            <br>    
+                            <p class="sin-codigo">No se mi código postal</p> 
+                        </label>
+                    </div>
+                    <div class="opcion-envio">
+                        <input type="radio" name="envio-retiro">
+                        <label class="retiro">Retiro en Sucursal:
+                            <br>
+                            Retirá tu pedido sin costo dentro de las 48 hs hábiles en Jose A. Cabrera 3250, CABA
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total">
+                <h4>TOTAL</h4>
+            </div>
+
+            <div class="finaliza-compra">
+                <button type="submit" name="compra" class="iniciar-compra">INICIAR COMPRA</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+</html>

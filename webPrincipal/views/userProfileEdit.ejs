@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
+    <%- include('./partials/head.ejs')%>
+</head>
+
+
+<body>
+
+    <%- include('./partials/header.ejs')%>
+    <main>
+        <div class="cuenta">
+            <h1>ACTUALIZÁ TUS DATOS</h1>
+        </div>
+        <br>
+        <section class="contenedor-a">
+            <form class="formulario" method="POST" action="/user/profile/edit/<%= userLogged.id%>/?_method=PUT">
+                <div class="contenedor">
+                    <div class="nombre-apellido">
+                        Nombre y apellido (*)
+                        <br>
+                        <input type="text" name="nombreyapellido" value="<%= userLogged.nombreyapellido %>">
+                    </div>
+                    <br>
+                    <div class="nombre-usuario">
+                        ¿Como te gustaria que te llamemos?
+                        <br>
+                        <input type="text" name="nombreusuario" value="<%= userLogged.apodo %>" >
+                    </div>
+                    <br>
+                    <br>
+                    <div class="email">
+                        Email (*)
+                        <br>
+                        <input type="email" name="email" value="<%= userLogged.email %>">
+                    </div>
+                    <br>
+                    <div class="telefono">
+                        Telefono (*)
+                        <br>
+                        <input type="telefono" name="telefono" value="<%= userLogged.telefono %>">
+                    </div>
+                    <br>
+                    <div class="Provincia">
+                        Provincia (*)
+                        <br>
+                        <div class="zonas">
+                            <select name="provincia" class="<%= locals.errors && errors.provincia ? "is-invalid" : null %>">
+                                <option disabled selected> Seleccioná tu opción</option>
+                                <% 
+                                    let provincias = ["Corrientes", "Buenos Aires", "Formosa", "Tucumán", "Salta", "Jujuy", "Catamarca", "Santa Fe"]
+                                %>
+                                <% for (let i=0; i < provincias.length; i++){%>
+                                    <% if (provincias[i] == userLogged.provincia) { %>
+                                        <option value="<%=provincias[i] %>" selected><%=provincias[i]%></option>
+                                    <% } else { %>
+                                        <option value="<%=provincias[i] %>" selected><%=provincias[i]%></option>
+                                    <% } %>
+                                <%}%>
+                            </select> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="localidad">
+                        Localidad (*)
+                        <br>
+                        <div class="localidad">
+                            <select name="localidad" class="<%= locals.errors && errors.localidad ? "is-invalid" : null %>">
+                                <option disabled selected> Seleccioná tu opción</option>
+                                <% 
+                                    let ciudades = ["Rosario", "Valle hermoso", "Reconquista", "San Miguel de Tucumán", "Rafaela", "Parana", "Corrientes", "Santa Fe"]
+                                %>
+                                <% for (let i=0; i < ciudades.length; i++){%>
+                                    <% if (ciudades[i] == userLogged.localidad) { %>
+                                        <option value="<%=ciudades[i] %>" selected><%=ciudades[i]%></option>
+                                    <% } else { %>
+                                        <option value="<%=ciudades[i] %>" selected><%=ciudades[i]%></option>
+                                    <% } %>
+                                <%}%>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="telefono">
+                        Direccion (*)
+                        <br>
+                        <div style="display: flex;">
+                            <input type="text" name="calle" placeholder="Calle" style="width: 65vw; font-family: 'Magra', sans-serif;" class="<%= locals.errors && errors.localidad ? "is-invalid" : null %>" value="<%= userLogged.calle %>"> <input type="text" name="numero" placeholder="Número" style="width: 12vw; margin-left: 3vw;font-family: 'Magra', sans-serif;" class="<%= locals.errors && errors.localidad ? "is-invalid" : null %>" value="<%= userLogged.numero %>">
+                        </div>
+                        <input type="piso-departamento" name="departamento" placeholder="Piso y Departamento" style="font-family: 'Magra', sans-serif;" value="<%= userLogged.departamento %>">
+                    </div>
+                    <section>
+                        <div class="contenedor-b">
+                            <label for="boton-enviar"></label>                
+                            <button type="submit" class="boton-formulario">CONFIRMA TUS CAMBIOS</button>
+                            <br>
+                        </div>
+                        <br>
+                    </section>
+                </div>
+            </form>
+        </section>
+        <br>
+    </main>
+    <%- include('./partials/footer.ejs')%>
+        
+</body>
+    
+
+</html>
